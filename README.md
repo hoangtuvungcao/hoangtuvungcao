@@ -10,10 +10,6 @@
   <img src="https://media.giphy.com/media/26tPplGWjN0xLybiU/giphy.gif" alt="Intro Animation" width="100%" style="border-radius: 15px; max-width: 600px;" />
 </p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2000&pause=500¢er=true&vCenter=true&width=650&lines=IT+Student+at+Tay+Nguyen+University+(TNU);Passionate+about+Technology,+AI,+and+Security+💻;Building+Innovative+and+Secure+Software;Always+Ready+to+Explore+New+Challenges" alt="Typing SVG" />
-</p>
-
 <p align="center" style="color: #e0e0e0; font-size: 16px; font-style: italic;">
   <b>Passionate Innovator</b> — I strive to create technology that inspires and empowers.
 </p>
