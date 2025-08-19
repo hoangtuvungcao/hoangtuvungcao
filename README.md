@@ -88,7 +88,7 @@
 
 <div style="background: linear-gradient(135deg, #1e1e2f 0%, #2a2a4a 100%); padding: 20px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); border: 1px solid #ff9966; text-align: center;">
   <p align="center" style="color: #e0e0e0; font-size: 16px;">
-    🏆 Top 10 in University Hackathon 2024.<br>
+
     🌟 Contributed to 5+ open-source projects.<br>
     📜 Certified in Python and AI from Coursera.
   </p>
