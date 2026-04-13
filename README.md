@@ -118,7 +118,7 @@
   <p align="center" style="color: #e0e0e0; font-size: 16px;">
     📧 <b>Gmail:</b> <a href="mailto:trong20843@gmail.com" style="color: #00ffcc;">trong20843@gmail.com</a><br>
     🎓 <b>Student Email:</b> <a href="mailto:24103094@sv.ttn.edu.vn" style="color: #00ffcc;">24103094@sv.ttn.edu.vn</a><br>
-    🌐 <b>Portfolio:</b> <a href="https://vantrong.x10.mx" style="color: #00ffcc;">vantrong.x10.mx</a>
+    🌐 <b>Portfolio:</b> <a href="vutrungocrong.fun" style="color: #00ffcc;">vutrungocrong.fun</a>
   </p>
   <p align="center">
     <a href="mailto:trong20843@gmail.com" style="background: linear-gradient(90deg, #00ffcc, #ff00ff); padding: 10px 20px; border-radius: 25px; color: #fff; text-decoration: none; font-weight: bold;">Contact Me</a>
