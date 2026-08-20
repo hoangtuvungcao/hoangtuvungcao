@@ -1,169 +1,407 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,4,6,8&height=200&section=header&text=Nguyễn%20Văn%20Trọng&fontSize=50&fontColor=fff&animation=twirl&fontAlignY=40" alt="Header Banner" style="border-radius: 15px;" />
+
+<div align="center">
+
+# Nguyễn Văn Trọng
+
+### Backend • DevOps • Cybersecurity • Infrastructure
+
+<p>
+  <a href="https://github.com/hoangtuvungcao">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+  <a href="mailto:trong20843@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+  </a>
 </p>
 
-<h1 align="center" style="color: #00ffcc; font-family: 'Fira Code', monospace; text-shadow: 0 0 10px #00ffcc;">
-  Hoàng Tử Vùng Cao | The Prince of the Highlands
-</h1>
-
-<p align="center">
-  <img src="https://media.giphy.com/media/26tPplGWjN0xLybiU/giphy.gif" alt="Intro Animation" width="100%" style="border-radius: 15px; max-width: 600px;" />
+<p>
+  <b>Information Technology Student at Tay Nguyen University</b><br>
+  Building secure, reliable and high-performance systems.
 </p>
 
-<p align="center" style="color: #e0e0e0; font-size: 16px; font-style: italic;">
-  <b>Passionate Innovator</b> — I strive to build technology that is secure, smart, and empowering.
+</div>
+
+---
+
+## About Me
+
+I'm **Nguyễn Văn Trọng**, a third-year **Information Technology student at Tay Nguyen University (TNU)**.
+
+My main interests are:
+
+- **Backend Engineering**
+- **DevOps & Infrastructure**
+- **Cybersecurity**
+- **Linux & Networking**
+- **WAF & DDoS Protection**
+- **eBPF / XDP**
+- **AI-assisted Security**
+
+I enjoy working close to the system level — from developing backend services and APIs to deploying Linux infrastructure, configuring reverse proxies, analyzing network traffic, and building security systems.
+
+My current career direction is **Backend / DevOps / Cybersecurity**, with a strong interest in Linux, networking, infrastructure security, distributed systems, and high-performance systems.
+
+---
+
+## What I Focus On
+
+```text
+Backend Engineering
+├── Go
+├── Node.js
+├── REST APIs
+├── WebSocket
+├── Concurrent Systems
+└── Distributed Services
+
+Infrastructure & DevOps
+├── Linux
+├── VPS
+├── Docker
+├── Nginx
+├── Cloudflare
+├── Reverse Proxy
+├── CI/CD
+└── Automation
+
+Cybersecurity
+├── WAF
+├── L7 DDoS Protection
+├── L3/L4 DDoS Mitigation
+├── Traffic Analysis
+├── Rate Limiting
+├── eBPF
+└── XDP
+
+AI / ML
+├── Security Analysis
+├── Traffic Classification
+├── LLM Integration
+├── LightGBM
+└── Explainable AI
+````
+
+---
+
+# Tech Stack
+
+### Languages
+
+<p>
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
+  <img src="https://img.shields.io/badge/Bash-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash">
+</p>
+
+### Backend & Web
+
+<p>
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" alt="Next.js">
+  <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express">
+  <img src="https://img.shields.io/badge/REST_API-005571?style=flat-square" alt="REST API">
+  <img src="https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=websocket&logoColor=white" alt="WebSocket">
+</p>
+
+### Infrastructure & DevOps
+
+<p>
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux">
+  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white" alt="Ubuntu">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" alt="Nginx">
+  <img src="https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare">
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git">
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" alt="GitHub Actions">
+</p>
+
+### Databases & Services
+
+<p>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis">
+  <img src="https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white" alt="MinIO">
+</p>
+
+### Cybersecurity
+
+<p>
+  <img src="https://img.shields.io/badge/WAF-FF6B35?style=flat-square" alt="WAF">
+  <img src="https://img.shields.io/badge/DDoS_Protection-8B0000?style=flat-square" alt="DDoS Protection">
+  <img src="https://img.shields.io/badge/eBPF-5A67D8?style=flat-square" alt="eBPF">
+  <img src="https://img.shields.io/badge/XDP-4C51BF?style=flat-square" alt="XDP">
+  <img src="https://img.shields.io/badge/Network_Security-2F855A?style=flat-square" alt="Network Security">
+  <img src="https://img.shields.io/badge/Traffic_Analysis-276749?style=flat-square" alt="Traffic Analysis">
+</p>
+
+### AI / Machine Learning
+
+<p>
+  <img src="https://img.shields.io/badge/LightGBM-02569B?style=flat-square" alt="LightGBM">
+  <img src="https://img.shields.io/badge/Gemini-4285F4?style=flat-square&logo=google&logoColor=white" alt="Gemini">
+  <img src="https://img.shields.io/badge/LLM_Integration-412991?style=flat-square" alt="LLM Integration">
+  <img src="https://img.shields.io/badge/Explainable_AI-6B46C1?style=flat-square" alt="Explainable AI">
 </p>
 
 ---
 
-<h2 align="center" style="color: #00ffcc; font-family: 'Fira Code', monospace;">
-  Giới thiệu | About Me
-</h2>
+# Featured Projects
 
-<div style="background: linear-gradient(135deg, #1e1e2f 0%, #2a2a4a 100%); padding: 20px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); border: 1px solid #00ffcc; text-align: center;">
-  <p align="center" style="font-size: 18px; font-weight: bold; color: #e0e0e0;"><b>Xin chào!</b></p>
-  <p align="center" style="font-size: 16px; color: #e0e0e0;">Mình là <b>Nguyễn Văn Trọng</b>, sinh viên năm 2 ngành <b>Công nghệ thông tin</b> tại <b>Đại học Tây Nguyên (TNU)</b> và là thành viên của CLB IT trường. Mình có niềm đam mê mãnh liệt với <b>Cybersecurity</b> (đặc biệt là bảo mật WAF & Anti-DDoS), <b>Full-stack Development</b>, và tích hợp <b>AI</b>. Mình luôn thích đào sâu vào hệ thống Linux, quản lý server, và chế tạo phần cứng để tạo ra những giải pháp tối ưu nhất.</p>
-  <br>
-  <p align="center" style="font-size: 18px; font-weight: bold; color: #e0e0e0;"><b>Hello!</b></p>
-  <p align="center" style="font-size: 16px; color: #e0e0e0;">I am <b>Nguyễn Văn Trọng</b>, a 2nd-year IT student at <b>Tay Nguyen University (TNU)</b> and an active member of the IT Club. I am deeply passionate about <b>Cybersecurity</b> (specifically WAF & Anti-DDoS), <b>Full-stack Development</b>, and <b>AI integration</b>. I love diving into Linux systems, managing servers, and working with hardware mods to build optimized and secure solutions.</p>
+## Mango Shield WAF
+
+A **high-performance Web Application Firewall written in Go**, designed for protecting web applications and backend infrastructure against malicious traffic and L7 attacks.
+
+### Focus
+
+* Web Application Firewall
+* L7 DDoS Protection
+* Reverse Proxy Protection
+* Traffic Filtering
+* Rate Limiting
+* IP Blocking & Mitigation
+* Cloudflare-aware Proxy Handling
+* High-performance Go Networking
+* Security Monitoring
+* Production Hardening
+
+The project focuses on combining **performance, security and reliability** for real-world infrastructure.
+
+---
+
+## ProxVN Tunnel
+
+A self-hosted tunneling and networking tool written in **Go**.
+
+### Focus
+
+* Network Tunneling
+* Proxy Infrastructure
+* Self-hosted Networking
+* Linux Deployment
+* Network Optimization
+* Infrastructure Automation
+
+---
+
+## eBPF / XDP Anti-DDoS Research
+
+Research and development around **low-level network traffic filtering and DDoS mitigation using eBPF/XDP**.
+
+### Focus
+
+* eBPF
+* XDP
+* Packet-level Filtering
+* L3/L4 DDoS Mitigation
+* Network Traffic Analysis
+* Security Automation
+* AI-assisted Detection
+* Explainable AI
+
+The goal is to explore how **kernel-level packet processing** can be combined with intelligent traffic analysis to build faster and more adaptive network defense systems.
+
+---
+
+## Leaf-Check AI
+
+An AI-driven agricultural project focused on **plant disease detection**.
+
+### Focus
+
+* AI-assisted Diagnosis
+* Computer Vision
+* Gemini / Gemma Models
+* Agricultural Technology
+* AI Application Development
+
+---
+
+## VPS & Infrastructure
+
+I also build, deploy and maintain self-hosted infrastructure and VPS environments.
+
+### Areas
+
+* Linux Server Administration
+* VPS Deployment
+* Docker Services
+* Nginx Reverse Proxy
+* Cloudflare Integration
+* Backend Deployment
+* Monitoring
+* Network Configuration
+* Server Automation
+* Infrastructure Security
+
+---
+
+# Currently Working On
+
+```text
+Cybersecurity
+├── WAF
+├── DDoS Protection
+├── Network Security
+└── Traffic Analysis
+
+Infrastructure
+├── Linux
+├── VPS
+├── Docker
+├── Nginx
+├── Cloudflare
+└── Automation
+
+Networking
+├── eBPF
+├── XDP
+├── Packet Processing
+└── High-performance Networking
+
+Backend
+├── Go
+├── Node.js
+├── APIs
+└── Distributed Services
+
+AI
+├── Security Classification
+├── LLM Integration
+└── Explainable AI
+```
+
+---
+
+# Engineering Interests
+
+I'm particularly interested in systems where **software engineering, infrastructure and security intersect**.
+
+### Backend Engineering
+
+* High-performance APIs
+* Concurrent systems
+* Distributed services
+* Networking
+* Backend architecture
+
+### Infrastructure
+
+* Linux
+* VPS
+* Containers
+* Reverse Proxies
+* Cloud Infrastructure
+* Automation
+
+### Cybersecurity
+
+* Web Application Firewalls
+* DDoS Mitigation
+* Network Security
+* Traffic Analysis
+* Security Monitoring
+* Infrastructure Hardening
+
+### Low-Level Systems
+
+* Linux Networking
+* eBPF
+* XDP
+* Kernel-level Packet Processing
+* Performance Optimization
+
+### Artificial Intelligence
+
+* AI-assisted Security
+* Traffic Classification
+* LLM Applications
+* Explainable AI
+* Intelligent Automation
+
+---
+
+# Experience & Highlights
+
+* Built and maintained security-focused systems around **WAF and DDoS protection**.
+* Developed backend and networking components using **Go**.
+* Configured and operated **Linux server infrastructure**.
+* Worked with **VPS, Docker, Nginx and Cloudflare-based infrastructure**.
+* Explored **eBPF/XDP** for high-performance network traffic filtering.
+* Developed AI-oriented applications and experimented with **LLM integration**.
+* Participated in university technical and STEM-related activities.
+
+---
+
+# Development Philosophy
+
+> **Build it. Break it. Understand it. Secure it. Optimize it.**
+
+I believe understanding a system means going beyond simply making it work.
+
+```text
+How does it work?
+        ↓
+Why does it work?
+        ↓
+What happens under load?
+        ↓
+What happens when it fails?
+        ↓
+How can it be secured?
+        ↓
+How can it be optimized?
+```
+
+---
+# GitHub Activity
+
+<div align="center">
+
+<a href="https://github.com/hoangtuvungcao">
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=hoangtuvungcao&theme=github-compact&hide_border=true"
+    alt="GitHub Contribution Graph"
+  />
+</a>
+
 </div>
 
 ---
 
-<h2 align="center" style="color: #ffcc00; font-family: 'Fira Code', monospace;">
-  Kỹ năng | Skills & Tech Stack
-</h2>
+# GitHub Streak
 
-<div style="background: linear-gradient(135deg, #1e1e2f 0%, #2a2a4a 100%); padding: 20px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); border: 1px solid #ffcc00; text-align: center;">
-  <p align="center" style="margin-bottom: 20px;">
-    <!-- Languages -->
-    <img src="https://img.shields.io/badge/Golang-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Golang" height="35"/>
-    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" height="35"/>
-    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" height="35"/>
-    <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" height="35"/>
-    <!-- Frameworks -->
-    <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" height="35"/>
-    <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" height="35"/>
-    <!-- Infrastructure & OS -->
-    <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Ubuntu" height="35"/>
-    <img src="https://img.shields.io/badge/CentOS-262577?style=for-the-badge&logo=centos&logoColor=white" alt="CentOS" height="35"/>
-    <img src="https://img.shields.io/badge/Linux_Mint-87A96B?style=for-the-badge&logo=linux-mint&logoColor=white" alt="Linux Mint" height="35"/>
-    <img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Cloudflare" height="35"/>
-  </p>
-  <p align="center" style="color: #e0e0e0; font-size: 16px;">
-    <b>Specialized in:</b> Web App Firewalls (WAF), L7 DDoS Protection, Server Administration (Linux), Backend Development, API Integrations (WHMCS, Gemini/OpenAI), and IoT Hardware (ESP32, ESP8266 mod boards).
-  </p>
+<div align="center">
+
+<img src="https://streak-stats.demolab.com/?user=hoangtuvungcao&theme=github-dark-blue&hide_border=true" alt="GitHub Streak">
+
+</div>
+---
+
+# Contact
+
+<div align="center">
+
+<a href="https://github.com/hoangtuvungcao">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</a>
+
+<a href="mailto:trong20843@gmail.com">
+  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+</a>
+
 </div>
 
 ---
 
-<h2 align="center" style="color: #ff6699; font-family: 'Fira Code', monospace;">
-  Đang phát triển | Currently Working On
-</h2>
+<div align="center">
 
-<div style="background: linear-gradient(135deg, #1e1e2f 0%, #2a2a4a 100%); padding: 20px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); border: 1px solid #ff6699; text-align: left;">
-  <p style="color: #e0e0e0; font-size: 16px; line-height: 1.6;">
-    <b>Mango-WAF:</b> Developing a robust Web Application Firewall focusing on L7 DDoS protection and masking backend IP origins.<br>
-    <b>ProxVN Tunnel:</b> Maintaining and updating a self-hosted tunneling tool written in Golang (currently v7.1.0+).<br>
-    <b>Leaf-Check AI:</b> Building an AI-driven agricultural project for plant disease detection using Gemini/Gemma models.<br>
-    <b>Infrastructure Management:</b> Operating and automating digital commerce platforms like vpsgen.com.
-  </p>
+### Backend • Infrastructure • Security
+
+**Building systems. Breaking limits. Securing infrastructure.**
+
 </div>
-
----
-
-<h2 align="center" style="color: #66ccff; font-family: 'Fira Code', monospace;">
-  Thống kê | GitHub Stats
-</h2>
-
-<div style="background: linear-gradient(135deg, #1e1e2f 0%, #2a2a4a 100%); padding: 20px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); border: 1px solid #66ccff; text-align: center;">
-  <p align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=hoangtuvungcao&show_icons=true&theme=midnight-purple&hide=issues&count_private=true&border_radius=15" alt="GitHub Stats" height="180" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hoangtuvungcao&layout=compact&theme=midnight-purple&hide=Jupyter%20Notebook&langs_count=5&border_radius=15" alt="Top Languages" height="180" />
-  </p>
-  <p align="center">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=hoangtuvungcao&theme=midnight-purple&border_radius=15" alt="Streak Stats" height="180" />
-  </p>
-</div>
-
----
-
-<h2 align="center" style="color: #ff9966; font-family: 'Fira Code', monospace;">
-  Hoạt động & Thành tựu | Activities & Achievements
-</h2>
-
-<div style="background: linear-gradient(135deg, #1e1e2f 0%, #2a2a4a 100%); padding: 20px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); border: 1px solid #ff9966; text-align: left;">
-  <p style="color: #e0e0e0; font-size: 16px; line-height: 1.6;">
-    - Participated in the <b>Semester II STEM Competition</b> at TNU with innovative AI solutions.<br>
-    - Successfully configured and deployed home server environments (Ubuntu Server 24.04 LTS) from scratch.<br>
-    - Active collaborator on technical documentation and university projects within the TNU IT Club.
-  </p>
-</div>
-
----
-
-<h2 align="center" style="color: #00cc99; font-family: 'Fira Code', monospace;">
-  Sở thích | Hobbies
-</h2>
-
-<div style="background: linear-gradient(135deg, #1e1e2f 0%, #2a2a4a 100%); padding: 20px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); border: 1px solid #00cc99; text-align: left;">
-  <p style="color: #e0e0e0; font-size: 16px; line-height: 1.6;">
-    - Setting up and managing game servers (Minecraft, FC Online).<br>
-    - Tinkering with hardware, specifically custom ESP8266 mod boards and IoT devices.<br>
-    - Catching the latest movies at local cinemas in Buôn Ma Thuột.<br>
-    - Exploring and distro-hopping various Linux environments (Pop!_OS, Arch, Kali).
-  </p>
-</div>
-
----
-
-<h2 align="center" style="color: #ff9966; font-family: 'Fira Code', monospace;">
-  Liên hệ | Contact
-</h2>
-
-<div style="background: linear-gradient(135deg, #1e1e2f 0%, #2a2a4a 100%); padding: 20px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); border: 1px solid #ff9966; text-align: center;">
-  <p align="center" style="color: #e0e0e0; font-size: 16px;">
-    <b>Personal Email:</b> <a href="mailto:trong20843@gmail.com" style="color: #00ffcc;">trong20843@gmail.com</a><br>
-    <b>Student Email:</b> <a href="mailto:24103094@sv.ttn.edu.vn" style="color: #00ffcc;">24103094@sv.ttn.edu.vn</a><br>
-    <b>Portfolio:</b> <a href="https://vutrungocrong.fun" style="color: #00ffcc;">vutrungocrong.fun</a>
-  </p>
-</div>
-
----
-
-<h2 align="center" style="color: #00cc99; font-family: 'Fira Code', monospace;">
-  Mạng xã hội | Socials & Connections
-</h2>
-
-<div style="background: linear-gradient(135deg, #1e1e2f 0%, #2a2a4a 100%); padding: 20px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); border: 1px solid #00cc99; text-align: center;">
-  <p align="center">
-    <a href="https://github.com/hoangtuvungcao" target="_blank">
-      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" height="40"/>
-    </a>
-    <a href="https://t.me/ZzTLINHzZ" target="_blank">
-      <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" height="40"/>
-    </a>
-    <a href="https://zalo.me/0862004792" target="_blank">
-      <img src="https://img.shields.io/badge/Zalo-0066FF?style=for-the-badge&logo=zalo&logoColor=white" alt="Zalo" height="40"/>
-    </a>
-  </p>
-</div>
-
----
-
-<p align="center">
-  <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" alt="Footer Animation" width="300" style="border-radius: 15px;" />
-</p>
-
-<p align="center" style="color: #e0e0e0; font-size: 16px; font-style: italic;">
-  <b>"Code không chỉ để chạy – mà còn để thể hiện tư duy, cá tính và trách nhiệm."</b><br>
-  <b>"Code is not just meant to run — it should reflect thinking, personality, and purpose."</b>
-</p>
-
-<p align="center">
-  <a href="#top" style="background: linear-gradient(90deg, #00ffcc, #ff00ff); padding: 10px 20px; border-radius: 25px; color: #fff; text-decoration: none; font-weight: bold;">Back to Top</a>
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,4,6,8&height=150&section=footer&animation=twirl" alt="Footer Banner" style="border-radius: 15px;" />
-</p>
