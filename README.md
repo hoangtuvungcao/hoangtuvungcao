@@ -1,22 +1,33 @@
+<!--
+  GitHub Profile README for:
+  https://github.com/hoangtuvungcao
+
+  Repository name must match the GitHub username:
+  hoangtuvungcao/hoangtuvungcao
+-->
 
 <div align="center">
 
 # Nguyễn Văn Trọng
 
-### Backend • DevOps • Cybersecurity • Infrastructure
+### Backend Engineering · DevOps · Defensive Security
+
+**Information Technology student at Tay Nguyen University**
+Building secure, reliable, and maintainable systems with **Go, Linux, networking, and cloud-native tooling**.
 
 <p>
   <a href="https://github.com/hoangtuvungcao">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+    <img src="https://img.shields.io/badge/GitHub-hoangtuvungcao-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile">
   </a>
   <a href="mailto:trong20843@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+    <img src="https://img.shields.io/badge/Email-trong20843%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
   </a>
 </p>
 
 <p>
-  <b>Information Technology Student at Tay Nguyen University</b><br>
-  Building secure, reliable and high-performance systems.
+  <img src="https://img.shields.io/github/followers/hoangtuvungcao?style=flat-square&logo=github&label=Followers" alt="GitHub followers">
+  <img src="https://img.shields.io/badge/Focus-Backend%20%7C%20Infrastructure%20%7C%20Security-0A66C2?style=flat-square" alt="Professional focus">
+  <img src="https://img.shields.io/badge/Location-Vietnam-DA251D?style=flat-square" alt="Location: Vietnam">
 </p>
 
 </div>
@@ -25,383 +36,208 @@
 
 ## About Me
 
-I'm **Nguyễn Văn Trọng**, a third-year **Information Technology student at Tay Nguyen University (TNU)**.
+I am an Information Technology student in Vietnam, focused on systems where **backend engineering, infrastructure, networking, and defensive security** intersect.
 
-My main interests are:
+* Build backend and networking services with **Go**.
+* Deploy and operate Linux services with **Docker, Nginx, Cloudflare, and CI/CD**.
+* Develop defensive security tooling around **WAF, traffic filtering, rate limiting, and monitoring**.
+* Explore **eBPF/XDP, high-concurrency networking, and AI-assisted security analysis**.
+* Turn technical projects into usable products through documentation, automation, and reproducible deployment.
 
-- **Backend Engineering**
-- **DevOps & Infrastructure**
-- **Cybersecurity**
-- **Linux & Networking**
-- **WAF & DDoS Protection**
-- **eBPF / XDP**
-- **AI-assisted Security**
-
-I enjoy working close to the system level — from developing backend services and APIs to deploying Linux infrastructure, configuring reverse proxies, analyzing network traffic, and building security systems.
-
-My current career direction is **Backend / DevOps / Cybersecurity**, with a strong interest in Linux, networking, infrastructure security, distributed systems, and high-performance systems.
+I value clear architecture, secure defaults, measurable results, honest technical limits, and documentation that helps other people operate the software.
 
 ---
 
-## What I Focus On
+## Selected Projects
 
-```text
-Backend Engineering
-├── Go
-├── Node.js
-├── REST APIs
-├── WebSocket
-├── Concurrent Systems
-└── Distributed Services
-
-Infrastructure & DevOps
-├── Linux
-├── VPS
-├── Docker
-├── Nginx
-├── Cloudflare
-├── Reverse Proxy
-├── CI/CD
-└── Automation
-
-Cybersecurity
-├── WAF
-├── L7 DDoS Protection
-├── L3/L4 DDoS Mitigation
-├── Traffic Analysis
-├── Rate Limiting
-├── eBPF
-└── XDP
-
-AI / ML
-├── Security Analysis
-├── Traffic Classification
-├── LLM Integration
-├── LightGBM
-└── Explainable AI
-````
-
----
-
-# Tech Stack
-
-### Languages
+### 🥭 [Mango WAF](https://github.com/hoangtuvungcao/mango-waf)
 
 <p>
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
-  <img src="https://img.shields.io/badge/Bash-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash">
+  <a href="https://github.com/hoangtuvungcao/mango-waf/stargazers">
+    <img src="https://img.shields.io/github/stars/hoangtuvungcao/mango-waf?style=flat-square&logo=github" alt="Mango WAF stars">
+  </a>
+  <a href="https://github.com/hoangtuvungcao/mango-waf/network/members">
+    <img src="https://img.shields.io/github/forks/hoangtuvungcao/mango-waf?style=flat-square&logo=github" alt="Mango WAF forks">
+  </a>
+  <a href="https://github.com/hoangtuvungcao/mango-waf/commits/main">
+    <img src="https://img.shields.io/github/last-commit/hoangtuvungcao/mango-waf?style=flat-square" alt="Mango WAF last commit">
+  </a>
+  <a href="https://github.com/hoangtuvungcao/mango-waf/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/hoangtuvungcao/mango-waf?style=flat-square" alt="Mango WAF license">
+  </a>
 </p>
 
-### Backend & Web
+A Go-based Web Application Firewall and reverse proxy focused on protecting web applications and APIs from malicious Layer 7 traffic.
+
+**Key areas**
+
+* Request filtering, rate limiting, IP mitigation, and reverse-proxy protection.
+* Cloudflare-aware traffic handling and security monitoring.
+* Configuration hot reload and Linux service deployment.
+* Work around HTTP/3, eBPF/XDP filtering, and multi-node coordination.
+* Operational documentation for deployment, configuration, and troubleshooting.
+
+[Repository](https://github.com/hoangtuvungcao/mango-waf) ·
+[Documentation](https://github.com/hoangtuvungcao/mango-waf/tree/main/docs) ·
+[Issues](https://github.com/hoangtuvungcao/mango-waf/issues)
+
+---
+
+### 🚇 [ProxVN Tunnel](https://github.com/hoangtuvungcao/proxvn_tunnel_full)
+
+<p>
+  <a href="https://github.com/hoangtuvungcao/proxvn_tunnel_full/stargazers">
+    <img src="https://img.shields.io/github/stars/hoangtuvungcao/proxvn_tunnel_full?style=flat-square&logo=github" alt="ProxVN Tunnel stars">
+  </a>
+  <a href="https://github.com/hoangtuvungcao/proxvn_tunnel_full/network/members">
+    <img src="https://img.shields.io/github/forks/hoangtuvungcao/proxvn_tunnel_full?style=flat-square&logo=github" alt="ProxVN Tunnel forks">
+  </a>
+  <a href="https://github.com/hoangtuvungcao/proxvn_tunnel_full/commits/main">
+    <img src="https://img.shields.io/github/last-commit/hoangtuvungcao/proxvn_tunnel_full?style=flat-square" alt="ProxVN Tunnel last commit">
+  </a>
+  <a href="https://github.com/hoangtuvungcao/proxvn_tunnel_full/releases">
+    <img src="https://img.shields.io/github/v/release/hoangtuvungcao/proxvn_tunnel_full?include_prereleases&style=flat-square" alt="ProxVN Tunnel release">
+  </a>
+</p>
+
+A self-hosted tunneling platform written in Go for exposing local services to the Internet without depending on a closed third-party tunnel provider.
+
+**Key areas**
+
+* HTTP/HTTPS, TCP, UDP, and WebDAV tunneling.
+* Cross-platform client and server builds.
+* Docker-based self-hosted deployment.
+* Certificate pinning and server-side operational controls.
+* Documentation for setup, deployment, troubleshooting, and release usage.
+
+[Repository](https://github.com/hoangtuvungcao/proxvn_tunnel_full) ·
+[Documentation](https://github.com/hoangtuvungcao/proxvn_tunnel_full/tree/main/docs) ·
+[Releases](https://github.com/hoangtuvungcao/proxvn_tunnel_full/releases) ·
+[Issues](https://github.com/hoangtuvungcao/proxvn_tunnel_full/issues)
+
+---
+
+### 🌿 [Leaf-Check AI](https://github.com/hoangtuvungcao/leaf-check-ai)
+
+<p>
+  <a href="https://github.com/hoangtuvungcao/leaf-check-ai/commits/main">
+    <img src="https://img.shields.io/github/last-commit/hoangtuvungcao/leaf-check-ai?style=flat-square" alt="Leaf-Check AI last commit">
+  </a>
+  <a href="https://github.com/hoangtuvungcao/leaf-check-ai">
+    <img src="https://img.shields.io/github/languages/top/hoangtuvungcao/leaf-check-ai?style=flat-square" alt="Leaf-Check AI primary language">
+  </a>
+  <a href="https://github.com/hoangtuvungcao/leaf-check-ai/releases">
+    <img src="https://img.shields.io/github/v/release/hoangtuvungcao/leaf-check-ai?include_prereleases&style=flat-square" alt="Leaf-Check AI release">
+  </a>
+</p>
+
+An AI-assisted agricultural platform for plant-leaf disease identification and expert-style farming guidance.
+
+**Key areas**
+
+* YOLO-based image diagnosis and top-k prediction workflow.
+* FastAPI backend for authentication, prediction, chatbot, administration, and reporting.
+* Flutter client for web and mobile interfaces.
+* Gemini-assisted agricultural chatbot.
+* Dataset review, model validation, retraining, and promotion workflow.
+
+[Repository](https://github.com/hoangtuvungcao/leaf-check-ai) ·
+[Documentation](https://github.com/hoangtuvungcao/leaf-check-ai/tree/main/docs) ·
+[Releases](https://github.com/hoangtuvungcao/leaf-check-ai/releases)
+
+---
+
+## Core Stack
+
+### Primary
 
 <p>
   <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go">
-  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" alt="Node.js">
-  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" alt="Next.js">
-  <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express">
-  <img src="https://img.shields.io/badge/REST_API-005571?style=flat-square" alt="REST API">
-  <img src="https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=websocket&logoColor=white" alt="WebSocket">
-</p>
-
-### Infrastructure & DevOps
-
-<p>
   <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux">
-  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white" alt="Ubuntu">
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
   <img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" alt="Nginx">
-  <img src="https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare">
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git">
   <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" alt="GitHub Actions">
-</p>
-
-### Databases & Services
-
-<p>
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL">
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis">
-  <img src="https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white" alt="MinIO">
 </p>
 
-### Cybersecurity
+### Systems, Networking, and Security
 
 <p>
-  <img src="https://img.shields.io/badge/WAF-FF6B35?style=flat-square" alt="WAF">
-  <img src="https://img.shields.io/badge/DDoS_Protection-8B0000?style=flat-square" alt="DDoS Protection">
   <img src="https://img.shields.io/badge/eBPF-5A67D8?style=flat-square" alt="eBPF">
   <img src="https://img.shields.io/badge/XDP-4C51BF?style=flat-square" alt="XDP">
-  <img src="https://img.shields.io/badge/Network_Security-2F855A?style=flat-square" alt="Network Security">
-  <img src="https://img.shields.io/badge/Traffic_Analysis-276749?style=flat-square" alt="Traffic Analysis">
+  <img src="https://img.shields.io/badge/WAF-FF6B35?style=flat-square" alt="Web Application Firewall">
+  <img src="https://img.shields.io/badge/Network_Security-2F855A?style=flat-square" alt="Network security">
+  <img src="https://img.shields.io/badge/Traffic_Analysis-276749?style=flat-square" alt="Traffic analysis">
+  <img src="https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare">
+  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus">
 </p>
 
-### AI / Machine Learning
+### Additional Tools
 
 <p>
-  <img src="https://img.shields.io/badge/LightGBM-02569B?style=flat-square" alt="LightGBM">
-  <img src="https://img.shields.io/badge/Gemini-4285F4?style=flat-square&logo=google&logoColor=white" alt="Gemini">
-  <img src="https://img.shields.io/badge/LLM_Integration-412991?style=flat-square" alt="LLM Integration">
-  <img src="https://img.shields.io/badge/Explainable_AI-6B46C1?style=flat-square" alt="Explainable AI">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter">
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/Bash-121011?style=flat-square&logo=gnu-bash&logoColor=white" alt="Bash">
 </p>
 
 ---
 
-# Featured Projects
+## Current Focus
 
-## Mango Shield WAF
-
-A **high-performance Web Application Firewall written in Go**, designed for protecting web applications and backend infrastructure against malicious traffic and L7 attacks.
-
-### Focus
-
-* Web Application Firewall
-* L7 DDoS Protection
-* Reverse Proxy Protection
-* Traffic Filtering
-* Rate Limiting
-* IP Blocking & Mitigation
-* Cloudflare-aware Proxy Handling
-* High-performance Go Networking
-* Security Monitoring
-* Production Hardening
-
-The project focuses on combining **performance, security and reliability** for real-world infrastructure.
+* Reproducible load, latency, and resource benchmarks for Go networking components.
+* Safer and more observable Linux deployment workflows.
+* Kernel-level packet filtering and traffic analysis with eBPF/XDP.
+* WAF architecture, defensive automation, and failure recovery.
+* CI security checks, release integrity, documentation, and operational hardening.
 
 ---
 
-## ProxVN Tunnel
+## Engineering Approach
 
-A self-hosted tunneling and networking tool written in **Go**.
+> Build it. Measure it. Break it safely. Understand the failure mode. Secure it. Improve it.
 
-### Focus
+My preferred engineering principles are:
 
-* Network Tunneling
-* Proxy Infrastructure
-* Self-hosted Networking
-* Linux Deployment
-* Network Optimization
-* Infrastructure Automation
-
----
-
-## eBPF / XDP Anti-DDoS Research
-
-Research and development around **low-level network traffic filtering and DDoS mitigation using eBPF/XDP**.
-
-### Focus
-
-* eBPF
-* XDP
-* Packet-level Filtering
-* L3/L4 DDoS Mitigation
-* Network Traffic Analysis
-* Security Automation
-* AI-assisted Detection
-* Explainable AI
-
-The goal is to explore how **kernel-level packet processing** can be combined with intelligent traffic analysis to build faster and more adaptive network defense systems.
+* **Measure before optimizing:** publish the environment, workload, latency, error rate, and resource usage.
+* **Design for recovery:** use health checks, rollback paths, safe defaults, and clear troubleshooting steps.
+* **State technical limits honestly:** security controls reduce risk; they do not replace secure application design or upstream capacity.
+* **Automate repeatable work:** builds, tests, security checks, releases, and deployment should be reproducible.
+* **Document for operators:** installation, configuration, architecture, failure modes, and recovery matter as much as source code.
 
 ---
 
-## Leaf-Check AI
+## Security and Responsible Use
 
-An AI-driven agricultural project focused on **plant disease detection**.
-
-### Focus
-
-* AI-assisted Diagnosis
-* Computer Vision
-* Gemini / Gemma Models
-* Agricultural Technology
-* AI Application Development
+My security-related projects and experiments are intended for **authorized defensive research, controlled lab testing, and educational use**. Testing should only be performed on systems you own or have explicit permission to assess.
 
 ---
 
-## VPS & Infrastructure
+## Opportunities and Collaboration
 
-I also build, deploy and maintain self-hosted infrastructure and VPS environments.
+I am interested in:
 
-### Areas
-
-* Linux Server Administration
-* VPS Deployment
-* Docker Services
-* Nginx Reverse Proxy
-* Cloudflare Integration
-* Backend Deployment
-* Monitoring
-* Network Configuration
-* Server Automation
-* Infrastructure Security
+* Backend Engineering internships and junior roles.
+* DevOps, Platform Engineering, and Linux infrastructure roles.
+* Defensive Security and Security Engineering opportunities.
+* Open-source collaboration involving Go, networking, observability, or infrastructure security.
 
 ---
 
-# Currently Working On
+## Contact
 
-```text
-Cybersecurity
-├── WAF
-├── DDoS Protection
-├── Network Security
-└── Traffic Analysis
-
-Infrastructure
-├── Linux
-├── VPS
-├── Docker
-├── Nginx
-├── Cloudflare
-└── Automation
-
-Networking
-├── eBPF
-├── XDP
-├── Packet Processing
-└── High-performance Networking
-
-Backend
-├── Go
-├── Node.js
-├── APIs
-└── Distributed Services
-
-AI
-├── Security Classification
-├── LLM Integration
-└── Explainable AI
-```
-
----
-
-# Engineering Interests
-
-I'm particularly interested in systems where **software engineering, infrastructure and security intersect**.
-
-### Backend Engineering
-
-* High-performance APIs
-* Concurrent systems
-* Distributed services
-* Networking
-* Backend architecture
-
-### Infrastructure
-
-* Linux
-* VPS
-* Containers
-* Reverse Proxies
-* Cloud Infrastructure
-* Automation
-
-### Cybersecurity
-
-* Web Application Firewalls
-* DDoS Mitigation
-* Network Security
-* Traffic Analysis
-* Security Monitoring
-* Infrastructure Hardening
-
-### Low-Level Systems
-
-* Linux Networking
-* eBPF
-* XDP
-* Kernel-level Packet Processing
-* Performance Optimization
-
-### Artificial Intelligence
-
-* AI-assisted Security
-* Traffic Classification
-* LLM Applications
-* Explainable AI
-* Intelligent Automation
-
----
-
-# Experience & Highlights
-
-* Built and maintained security-focused systems around **WAF and DDoS protection**.
-* Developed backend and networking components using **Go**.
-* Configured and operated **Linux server infrastructure**.
-* Worked with **VPS, Docker, Nginx and Cloudflare-based infrastructure**.
-* Explored **eBPF/XDP** for high-performance network traffic filtering.
-* Developed AI-oriented applications and experimented with **LLM integration**.
-* Participated in university technical and STEM-related activities.
-
----
-
-# Development Philosophy
-
-> **Build it. Break it. Understand it. Secure it. Optimize it.**
-
-I believe understanding a system means going beyond simply making it work.
-
-```text
-How does it work?
-        ↓
-Why does it work?
-        ↓
-What happens under load?
-        ↓
-What happens when it fails?
-        ↓
-How can it be secured?
-        ↓
-How can it be optimized?
-```
-
----
-# GitHub Activity
+* **Email:** [trong20843@gmail.com](mailto:trong20843@gmail.com)
+* **GitHub:** [github.com/hoangtuvungcao](https://github.com/hoangtuvungcao)
+* **Location:** Vietnam
 
 <div align="center">
 
-<a href="https://github.com/hoangtuvungcao">
-  <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=hoangtuvungcao&theme=github-compact&hide_border=true"
-    alt="GitHub Contribution Graph"
-  />
-</a>
+### Backend · Infrastructure · Defensive Security
 
-</div>
-
----
-
-# GitHub Streak
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com/?user=hoangtuvungcao&theme=github-dark-blue&hide_border=true" alt="GitHub Streak">
-
-</div>
----
-
-# Contact
-
-<div align="center">
-
-<a href="https://github.com/hoangtuvungcao">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-</a>
-
-<a href="mailto:trong20843@gmail.com">
-  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
-</a>
-
-</div>
-
----
-
-<div align="center">
-
-### Backend • Infrastructure • Security
-
-**Building systems. Breaking limits. Securing infrastructure.**
+Building systems that are useful, observable, and easier to operate safely.
 
 </div>
