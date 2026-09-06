@@ -15,48 +15,36 @@
   <rect x="0.5" y="0.5" width="439" height="259" rx="12" fill="none" stroke="#30363d" stroke-width="1"/>
 
   <!-- Title -->
-  <text x="30" y="45" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="url(#title-grad)">📊 GitHub Stats</text>
-  <rect x="30" y="56" width="120" height="2" rx="1" fill="url(#title-grad)" opacity="0.5"/>
+  <text x="30" y="45" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="url(#title-grad)">GitHub Stats</text>
+  <rect x="30" y="52" width="80" height="1.5" rx="1" fill="url(#title-grad)" opacity="0.4"/>
 
   
-    <g transform="translate(30, 85)">
-      <text font-family="'Segoe UI Emoji', 'Apple Color Emoji', sans-serif" font-size="14">⭐</text>
-      <text x="28" font-family="'Inter', sans-serif" font-size="13" fill="#94a3b8" dominant-baseline="central">Total Stars</text>
+    <g transform="translate(30, 80)">
+      <text x="0" font-family="'Inter', sans-serif" font-size="13" fill="#8b949e" dominant-baseline="central">Total Stars</text>
       <text x="410" font-family="'JetBrains Mono', monospace" font-size="14" fill="#e2e8f0" text-anchor="end" font-weight="600" dominant-baseline="central">314</text>
-      <rect x="160" y="-6" width="160" height="12" rx="3" fill="#fbbf24" opacity="0.15">
-        <animate attributeName="width" from="0" to="160" dur="1s" begin="0.2s" fill="freeze"/>
+      <rect x="130" y="-5" width="160" height="10" rx="3" fill="#fbbf24" opacity="0.2">
+        <animate attributeName="width" from="0" to="160" dur="0.8s" begin="0.15s" fill="freeze"/>
       </rect>
     </g>
-    <g transform="translate(30, 119)">
-      <text font-family="'Segoe UI Emoji', 'Apple Color Emoji', sans-serif" font-size="14">📦</text>
-      <text x="28" font-family="'Inter', sans-serif" font-size="13" fill="#94a3b8" dominant-baseline="central">Repositories</text>
+    <g transform="translate(30, 116)">
+      <text x="0" font-family="'Inter', sans-serif" font-size="13" fill="#8b949e" dominant-baseline="central">Repositories</text>
       <text x="410" font-family="'JetBrains Mono', monospace" font-size="14" fill="#e2e8f0" text-anchor="end" font-weight="600" dominant-baseline="central">72</text>
-      <rect x="160" y="-6" width="160" height="12" rx="3" fill="#6366f1" opacity="0.15">
-        <animate attributeName="width" from="0" to="160" dur="1s" begin="0.35s" fill="freeze"/>
+      <rect x="130" y="-5" width="58" height="10" rx="3" fill="#6366f1" opacity="0.2">
+        <animate attributeName="width" from="0" to="58" dur="0.8s" begin="0.27s" fill="freeze"/>
       </rect>
     </g>
-    <g transform="translate(30, 153)">
-      <text font-family="'Segoe UI Emoji', 'Apple Color Emoji', sans-serif" font-size="14">🔀</text>
-      <text x="28" font-family="'Inter', sans-serif" font-size="13" fill="#94a3b8" dominant-baseline="central">Total Forks</text>
+    <g transform="translate(30, 152)">
+      <text x="0" font-family="'Inter', sans-serif" font-size="13" fill="#8b949e" dominant-baseline="central">Total Forks</text>
       <text x="410" font-family="'JetBrains Mono', monospace" font-size="14" fill="#e2e8f0" text-anchor="end" font-weight="600" dominant-baseline="central">98</text>
-      <rect x="160" y="-6" width="160" height="12" rx="3" fill="#a855f7" opacity="0.15">
-        <animate attributeName="width" from="0" to="160" dur="1s" begin="0.5s" fill="freeze"/>
+      <rect x="130" y="-5" width="79" height="10" rx="3" fill="#a855f7" opacity="0.2">
+        <animate attributeName="width" from="0" to="79" dur="0.8s" begin="0.39s" fill="freeze"/>
       </rect>
     </g>
-    <g transform="translate(30, 187)">
-      <text font-family="'Segoe UI Emoji', 'Apple Color Emoji', sans-serif" font-size="14">👥</text>
-      <text x="28" font-family="'Inter', sans-serif" font-size="13" fill="#94a3b8" dominant-baseline="central">Followers</text>
+    <g transform="translate(30, 188)">
+      <text x="0" font-family="'Inter', sans-serif" font-size="13" fill="#8b949e" dominant-baseline="central">Followers</text>
       <text x="410" font-family="'JetBrains Mono', monospace" font-size="14" fill="#e2e8f0" text-anchor="end" font-weight="600" dominant-baseline="central">26</text>
-      <rect x="160" y="-6" width="78" height="12" rx="3" fill="#ec4899" opacity="0.15">
-        <animate attributeName="width" from="0" to="78" dur="1s" begin="0.6499999999999999s" fill="freeze"/>
-      </rect>
-    </g>
-    <g transform="translate(30, 221)">
-      <text font-family="'Segoe UI Emoji', 'Apple Color Emoji', sans-serif" font-size="14">👁️</text>
-      <text x="28" font-family="'Inter', sans-serif" font-size="13" fill="#94a3b8" dominant-baseline="central">Profile Views</text>
-      <text x="410" font-family="'JetBrains Mono', monospace" font-size="14" fill="#e2e8f0" text-anchor="end" font-weight="600" dominant-baseline="central">—</text>
-      <rect x="160" y="-6" width="20" height="12" rx="3" fill="#38bdf8" opacity="0.15">
-        <animate attributeName="width" from="0" to="20" dur="1s" begin="0.8s" fill="freeze"/>
+      <rect x="130" y="-5" width="21" height="10" rx="3" fill="#ec4899" opacity="0.2">
+        <animate attributeName="width" from="0" to="21" dur="0.8s" begin="0.51s" fill="freeze"/>
       </rect>
     </g>
 </svg>
