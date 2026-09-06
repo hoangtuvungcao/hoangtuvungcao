@@ -46,19 +46,19 @@
       <animate attributeName="width" from="0" to="113.9" dur="1s" begin="0.00s" fill="freeze"/>
     </rect>
   <rect x="141.9" y="56" width="0" height="9" rx="0" fill="#f1e05a">
-      <animate attributeName="width" from="0" to="101.9" dur="1s" begin="0.08s" fill="freeze"/>
+      <animate attributeName="width" from="0" to="101.6" dur="1s" begin="0.08s" fill="freeze"/>
     </rect>
-  <rect x="243.9" y="56" width="0" height="9" rx="0" fill="#00ADD8">
+  <rect x="243.5" y="56" width="0" height="9" rx="0" fill="#00ADD8">
       <animate attributeName="width" from="0" to="36.8" dur="1s" begin="0.16s" fill="freeze"/>
     </rect>
-  <rect x="280.6" y="56" width="0" height="9" rx="0" fill="#3178c6">
+  <rect x="280.3" y="56" width="0" height="9" rx="0" fill="#3178c6">
       <animate attributeName="width" from="0" to="22.9" dur="1s" begin="0.24s" fill="freeze"/>
     </rect>
-  <rect x="303.5" y="56" width="0" height="9" rx="0" fill="#3572A5">
+  <rect x="303.2" y="56" width="0" height="9" rx="0" fill="#3572A5">
       <animate attributeName="width" from="0" to="21.1" dur="1s" begin="0.32s" fill="freeze"/>
     </rect>
-  <rect x="324.7" y="56" width="0" height="9" rx="0" fill="#e34c26">
-      <animate attributeName="width" from="0" to="14.9" dur="1s" begin="0.40s" fill="freeze"/>
+  <rect x="324.3" y="56" width="0" height="9" rx="0" fill="#e34c26">
+      <animate attributeName="width" from="0" to="15.3" dur="1s" begin="0.40s" fill="freeze"/>
     </rect>
   <rect x="339.6" y="56" width="0" height="9" rx="0" fill="#00B4AB">
       <animate attributeName="width" from="0" to="13.8" dur="1s" begin="0.48s" fill="freeze"/>
@@ -80,7 +80,7 @@
         <animate attributeName="opacity" values="0.65;1;0.65" dur="3s" begin="0.3s" repeatCount="indefinite"/>
       </rect>
       <text x="16" font-family="'Inter',-apple-system,sans-serif" font-size="11.5" fill="#cbd5e1" dominant-baseline="central" font-weight="500">JavaScript</text>
-      <text x="172" font-family="'JetBrains Mono',monospace" font-size="11" fill="#64748b" text-anchor="end" dominant-baseline="central">28.0%</text>
+      <text x="172" font-family="'JetBrains Mono',monospace" font-size="11" fill="#64748b" text-anchor="end" dominant-baseline="central">27.9%</text>
       <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.47s" fill="freeze"/>
     </g>
     <g transform="translate(28, 121)" opacity="0">
@@ -112,7 +112,7 @@
         <animate attributeName="opacity" values="0.65;1;0.65" dur="3s" begin="1.5s" repeatCount="indefinite"/>
       </rect>
       <text x="16" font-family="'Inter',-apple-system,sans-serif" font-size="11.5" fill="#cbd5e1" dominant-baseline="central" font-weight="500">HTML</text>
-      <text x="172" font-family="'JetBrains Mono',monospace" font-size="11" fill="#64748b" text-anchor="end" dominant-baseline="central">4.1%</text>
+      <text x="172" font-family="'JetBrains Mono',monospace" font-size="11" fill="#64748b" text-anchor="end" dominant-baseline="central">4.2%</text>
       <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.75s" fill="freeze"/>
     </g>
     <g transform="translate(28, 179)" opacity="0">
