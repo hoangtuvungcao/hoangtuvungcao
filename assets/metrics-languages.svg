@@ -37,28 +37,28 @@
   <!-- Bar background -->
   <rect x="28" y="58" width="404" height="10" rx="5" fill="rgba(255,255,255,0.03)"/>
   <rect x="28.0" y="58" width="0" height="10" rx="5 0 0 5" fill="#dea584">
-      <animate attributeName="width" from="0" to="124.0" dur="1.2s" begin="0.00s" fill="freeze"/>
+      <animate attributeName="width" from="0" to="126.5" dur="1.2s" begin="0.00s" fill="freeze"/>
     </rect>
-  <rect x="152.0" y="58" width="0" height="10" rx="0" fill="#f1e05a">
-      <animate attributeName="width" from="0" to="118.0" dur="1.2s" begin="0.10s" fill="freeze"/>
+  <rect x="154.5" y="58" width="0" height="10" rx="0" fill="#f1e05a">
+      <animate attributeName="width" from="0" to="113.1" dur="1.2s" begin="0.10s" fill="freeze"/>
     </rect>
-  <rect x="270.0" y="58" width="0" height="10" rx="0" fill="#00ADD8">
-      <animate attributeName="width" from="0" to="43.6" dur="1.2s" begin="0.20s" fill="freeze"/>
+  <rect x="267.6" y="58" width="0" height="10" rx="0" fill="#00ADD8">
+      <animate attributeName="width" from="0" to="40.8" dur="1.2s" begin="0.20s" fill="freeze"/>
     </rect>
-  <rect x="313.6" y="58" width="0" height="10" rx="0" fill="#3178c6">
-      <animate attributeName="width" from="0" to="27.1" dur="1.2s" begin="0.30s" fill="freeze"/>
+  <rect x="308.4" y="58" width="0" height="10" rx="0" fill="#3178c6">
+      <animate attributeName="width" from="0" to="25.5" dur="1.2s" begin="0.30s" fill="freeze"/>
     </rect>
-  <rect x="340.7" y="58" width="0" height="10" rx="0" fill="#3572A5">
-      <animate attributeName="width" from="0" to="25.5" dur="1.2s" begin="0.40s" fill="freeze"/>
+  <rect x="333.8" y="58" width="0" height="10" rx="0" fill="#3572A5">
+      <animate attributeName="width" from="0" to="23.4" dur="1.2s" begin="0.40s" fill="freeze"/>
     </rect>
-  <rect x="366.1" y="58" width="0" height="10" rx="0" fill="#00B4AB">
+  <rect x="357.3" y="58" width="0" height="10" rx="0" fill="#e34c26">
       <animate attributeName="width" from="0" to="16.6" dur="1.2s" begin="0.50s" fill="freeze"/>
     </rect>
-  <rect x="382.7" y="58" width="0" height="10" rx="0" fill="#e34c26">
-      <animate attributeName="width" from="0" to="13.7" dur="1.2s" begin="0.60s" fill="freeze"/>
+  <rect x="373.8" y="58" width="0" height="10" rx="0" fill="#00B4AB">
+      <animate attributeName="width" from="0" to="15.4" dur="1.2s" begin="0.60s" fill="freeze"/>
     </rect>
-  <rect x="396.4" y="58" width="0" height="10" rx="0 5 5 0" fill="#555555">
-      <animate attributeName="width" from="0" to="8.1" dur="1.2s" begin="0.70s" fill="freeze"/>
+  <rect x="389.2" y="58" width="0" height="10" rx="0 5 5 0" fill="#555555">
+      <animate attributeName="width" from="0" to="8.5" dur="1.2s" begin="0.70s" fill="freeze"/>
     </rect>
   
     <g transform="translate(28, 95)" opacity="0">
@@ -66,7 +66,7 @@
         <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" begin="0.0s" repeatCount="indefinite"/>
       </rect>
       <text x="16" font-family="'Inter',sans-serif" font-size="12" fill="#c9d1d9" dominant-baseline="central" font-weight="500">Rust</text>
-      <text x="175" font-family="'JetBrains Mono',monospace" font-size="11" fill="#6e7681" text-anchor="end" dominant-baseline="central">30.7%</text>
+      <text x="175" font-family="'JetBrains Mono',monospace" font-size="11" fill="#6e7681" text-anchor="end" dominant-baseline="central">31.3%</text>
       <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.50s" fill="freeze"/>
     </g>
     <g transform="translate(238, 95)" opacity="0">
@@ -74,7 +74,7 @@
         <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" begin="0.3s" repeatCount="indefinite"/>
       </rect>
       <text x="16" font-family="'Inter',sans-serif" font-size="12" fill="#c9d1d9" dominant-baseline="central" font-weight="500">JavaScript</text>
-      <text x="175" font-family="'JetBrains Mono',monospace" font-size="11" fill="#6e7681" text-anchor="end" dominant-baseline="central">29.2%</text>
+      <text x="175" font-family="'JetBrains Mono',monospace" font-size="11" fill="#6e7681" text-anchor="end" dominant-baseline="central">28.0%</text>
       <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.58s" fill="freeze"/>
     </g>
     <g transform="translate(28, 125)" opacity="0">
@@ -82,7 +82,7 @@
         <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" begin="0.6s" repeatCount="indefinite"/>
       </rect>
       <text x="16" font-family="'Inter',sans-serif" font-size="12" fill="#c9d1d9" dominant-baseline="central" font-weight="500">Go</text>
-      <text x="175" font-family="'JetBrains Mono',monospace" font-size="11" fill="#6e7681" text-anchor="end" dominant-baseline="central">10.8%</text>
+      <text x="175" font-family="'JetBrains Mono',monospace" font-size="11" fill="#6e7681" text-anchor="end" dominant-baseline="central">10.1%</text>
       <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.66s" fill="freeze"/>
     </g>
     <g transform="translate(238, 125)" opacity="0">
@@ -90,7 +90,7 @@
         <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" begin="0.9s" repeatCount="indefinite"/>
       </rect>
       <text x="16" font-family="'Inter',sans-serif" font-size="12" fill="#c9d1d9" dominant-baseline="central" font-weight="500">TypeScript</text>
-      <text x="175" font-family="'JetBrains Mono',monospace" font-size="11" fill="#6e7681" text-anchor="end" dominant-baseline="central">6.7%</text>
+      <text x="175" font-family="'JetBrains Mono',monospace" font-size="11" fill="#6e7681" text-anchor="end" dominant-baseline="central">6.3%</text>
       <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.74s" fill="freeze"/>
     </g>
     <g transform="translate(28, 155)" opacity="0">
@@ -98,23 +98,23 @@
         <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" begin="1.2s" repeatCount="indefinite"/>
       </rect>
       <text x="16" font-family="'Inter',sans-serif" font-size="12" fill="#c9d1d9" dominant-baseline="central" font-weight="500">Python</text>
-      <text x="175" font-family="'JetBrains Mono',monospace" font-size="11" fill="#6e7681" text-anchor="end" dominant-baseline="central">6.3%</text>
+      <text x="175" font-family="'JetBrains Mono',monospace" font-size="11" fill="#6e7681" text-anchor="end" dominant-baseline="central">5.8%</text>
       <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.82s" fill="freeze"/>
     </g>
     <g transform="translate(238, 155)" opacity="0">
-      <rect x="0" y="-5" width="10" height="10" rx="2.5" fill="#00B4AB">
+      <rect x="0" y="-5" width="10" height="10" rx="2.5" fill="#e34c26">
         <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" begin="1.5s" repeatCount="indefinite"/>
       </rect>
-      <text x="16" font-family="'Inter',sans-serif" font-size="12" fill="#c9d1d9" dominant-baseline="central" font-weight="500">Dart</text>
+      <text x="16" font-family="'Inter',sans-serif" font-size="12" fill="#c9d1d9" dominant-baseline="central" font-weight="500">HTML</text>
       <text x="175" font-family="'JetBrains Mono',monospace" font-size="11" fill="#6e7681" text-anchor="end" dominant-baseline="central">4.1%</text>
       <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.90s" fill="freeze"/>
     </g>
     <g transform="translate(28, 185)" opacity="0">
-      <rect x="0" y="-5" width="10" height="10" rx="2.5" fill="#e34c26">
+      <rect x="0" y="-5" width="10" height="10" rx="2.5" fill="#00B4AB">
         <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" begin="1.8s" repeatCount="indefinite"/>
       </rect>
-      <text x="16" font-family="'Inter',sans-serif" font-size="12" fill="#c9d1d9" dominant-baseline="central" font-weight="500">HTML</text>
-      <text x="175" font-family="'JetBrains Mono',monospace" font-size="11" fill="#6e7681" text-anchor="end" dominant-baseline="central">3.4%</text>
+      <text x="16" font-family="'Inter',sans-serif" font-size="12" fill="#c9d1d9" dominant-baseline="central" font-weight="500">Dart</text>
+      <text x="175" font-family="'JetBrains Mono',monospace" font-size="11" fill="#6e7681" text-anchor="end" dominant-baseline="central">3.8%</text>
       <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.98s" fill="freeze"/>
     </g>
     <g transform="translate(238, 185)" opacity="0">
@@ -122,7 +122,7 @@
         <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" begin="2.1s" repeatCount="indefinite"/>
       </rect>
       <text x="16" font-family="'Inter',sans-serif" font-size="12" fill="#c9d1d9" dominant-baseline="central" font-weight="500">C</text>
-      <text x="175" font-family="'JetBrains Mono',monospace" font-size="11" fill="#6e7681" text-anchor="end" dominant-baseline="central">2.0%</text>
+      <text x="175" font-family="'JetBrains Mono',monospace" font-size="11" fill="#6e7681" text-anchor="end" dominant-baseline="central">2.1%</text>
       <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.06s" fill="freeze"/>
     </g>
 </svg>
