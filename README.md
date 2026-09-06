@@ -287,44 +287,38 @@ Security-related projects and experiments are intended for **authorized defensiv
 
 ## Opportunities
 
-<p>
-  <img src="https://img.shields.io/badge/Backend_Engineering-internship%20·%20junior-6366f1?style=flat-square" alt="Backend"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/DevOps_%2F_Platform-engineering-a855f7?style=flat-square" alt="DevOps"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/Security-engineering-ec4899?style=flat-square" alt="Security"/>
-  &nbsp;
-  <img src="https://img.shields.io/badge/Open_Source-collaboration-22c55e?style=flat-square" alt="OSS"/>
-</p>
+| Domain | Focus Areas | Status |
+| :--- | :--- | :--- |
+| **Backend Engineering** | Go, Rust, Distributed Systems, High-Concurrency APIs | `Open to Junior / Internship` |
+| **DevOps & Platform** | Linux Hardening, Docker, CI/CD Pipelines, Observability | `Available for projects` |
+| **Defensive Security** | WAF Architecture, eBPF/XDP Filtering, Traffic Analysis | `Active research` |
+| **Open Source** | Tunneling Platforms, Network Tooling, Security Hardening | `Open to collaboration` |
 
 ---
 
 <!-- FOOTER -->
 
-<img src="./assets/footer-wave.svg" width="100%" alt=""/>
-
 <div align="center">
 
-<a href="https://github-readme-stats-sigma-five.vercel.app/api?username=hoangtuvungcao&show_icons=true&theme=transparent&hide_border=true&bg_color=0d1117&title_color=6366f1&text_color=8b949e&icon_color=a855f7">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=hoangtuvungcao&show_icons=true&theme=transparent&hide_border=true&bg_color=0d1117&title_color=6366f1&text_color=8b949e&icon_color=a855f7" alt="GitHub Stats" width="460"/>
-</a>
+<img src="./assets/footer.svg" alt="Connect with Nguyen Van Trong" width="100%"/>
 
 <br/><br/>
 
-**Contact**
+<p>
+  <a href="mailto:trong20843@gmail.com">
+    <img src="https://img.shields.io/badge/Email-trong20843%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/hoangtuvungcao">
+    <img src="https://img.shields.io/badge/GitHub-hoangtuvungcao-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+</p>
 
-<a href="mailto:trong20843@gmail.com">
-  <img src="https://img.shields.io/badge/Gmail-trong20843-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"/>
-</a>
-&nbsp;
-<a href="https://github.com/hoangtuvungcao">
-  <img src="https://img.shields.io/badge/GitHub-hoangtuvungcao-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
-</a>
-
-<br/><br/>
+<br/>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366f1,50:a855f7,100:ec4899&height=60&section=footer" width="100%" alt=""/>
 
 <sub>Metrics auto-generated via GitHub Actions · Updated every 6 hours</sub>
 
 </div>
+

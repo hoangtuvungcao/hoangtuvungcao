@@ -1,0 +1,168 @@
+/**
+ * generate-footer.js
+ *
+ * Generates an ultra-premium animated SVG footer card:
+ * - Aurora gradient background matching header & metrics cards
+ * - Animated beacon pulse indicator ("AVAILABLE FOR WORK")
+ * - Vietnam flag badge & location info
+ * - Clean terminal/cyberpunk layout with contact coordinates
+ * - Animated gradient border & subtle particle drift
+ */
+
+import { writeFileSync, mkdirSync } from 'fs';
+import { dirname, join } from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const OUTPUT_DIR = join(__dirname, '..', '..', 'assets');
+mkdirSync(OUTPUT_DIR, { recursive: true });
+
+function generateFooter() {
+  const width = 900;
+  const height = 180;
+
+  // Mathematical 10-point star for Vietnam flag mini badge
+  const flagW = 28, flagH = 18;
+  const cx = flagW / 2, cy = flagH / 2;
+  const R = 5.6, r = R * 0.381966;
+  const starPoints = [];
+  for (let k = 0; k < 10; k++) {
+    const angle = -Math.PI / 2 + (k * Math.PI) / 5;
+    const rad = k % 2 === 0 ? R : r;
+    starPoints.push(`${(cx + rad * Math.cos(angle)).toFixed(2)},${(cy + rad * Math.sin(angle)).toFixed(2)}`);
+  }
+
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="fbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#050510"/>
+      <stop offset="40%" style="stop-color:#0d1117"/>
+      <stop offset="70%" style="stop-color:#0c0622"/>
+      <stop offset="100%" style="stop-color:#050510"/>
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="faccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="50%" style="stop-color:#a855f7"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="fborder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.35">
+        <animate attributeName="stop-opacity" values="0.25;0.55;0.25" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#a855f7;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:0.35">
+        <animate attributeName="stop-opacity" values="0.25;0.55;0.25" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Title Gradient -->
+    <linearGradient id="ftitle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f1f5f9"/>
+      <stop offset="60%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#c7d2fe"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="fglow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="fbeacon"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+
+    <!-- Scanline Pattern -->
+    <pattern id="fscan" patternUnits="userSpaceOnUse" width="4" height="4">
+      <line x1="0" y1="0" x2="4" y2="0" stroke="rgba(255,255,255,0.007)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="${width}" height="${height}" rx="12" fill="url(#fbg)"/>
+  <rect width="${width}" height="${height}" rx="12" fill="url(#fscan)"/>
+
+  <!-- Border -->
+  <rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="12" fill="none" stroke="url(#fborder)" stroke-width="1"/>
+
+  <!-- Top Accent Beam -->
+  <rect x="140" y="10" width="620" height="1.5" rx="1" fill="url(#faccent)" opacity="0.6" filter="url(#fglow)">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- LEFT SECTION: Status & Message -->
+  <g transform="translate(36, 40)">
+    <!-- Beacon Indicator Pill -->
+    <g>
+      <rect width="210" height="24" rx="12" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.25)" stroke-width="0.8"/>
+      <!-- Pulsing Beacon -->
+      <circle cx="16" cy="12" r="3.5" fill="#22c55e">
+        <animate attributeName="r" values="3.5;5;3.5" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="16" cy="12" r="7" fill="#22c55e" opacity="0.2" filter="url(#fbeacon)">
+        <animate attributeName="r" values="4;9;4" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.3;0;0.3" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="32" y="16" font-family="'JetBrains Mono',monospace" font-size="10" fill="#4ade80" font-weight="600">OPEN FOR COLLABORATION</text>
+    </g>
+
+    <!-- Main Heading -->
+    <text x="0" y="56" font-family="'Inter',-apple-system,sans-serif" font-size="20" font-weight="800" fill="url(#ftitle)" letter-spacing="-0.3">
+      Let's build secure &amp; resilient systems.
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="80" font-family="'Inter',-apple-system,sans-serif" font-size="12.5" fill="#94a3b8" font-weight="400">
+      Focused on high-performance backend, Linux kernel networking &amp; defensive security.
+    </text>
+
+    <!-- Location & Flag -->
+    <g transform="translate(0, 96)">
+      <!-- Mini Vietnam Flag -->
+      <rect width="${flagW}" height="${flagH}" rx="2.5" fill="#DA251D"/>
+      <polygon points="${starPoints.join(' ')}" fill="#FFFF00"/>
+      <rect width="${flagW}" height="${flagH}" rx="2.5" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="0.5"/>
+      <text x="${flagW + 10}" y="13" font-family="'JetBrains Mono',monospace" font-size="10.5" fill="#64748b">
+        Tay Nguyen / Ho Chi Minh City · <tspan fill="#fca5a5" font-weight="600">Vietnam</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- RIGHT SECTION: Direct Contact Channels -->
+  <g transform="translate(560, 40)">
+    <!-- Section Title -->
+    <text x="0" y="14" font-family="'JetBrains Mono',monospace" font-size="10" fill="#818cf8" font-weight="600" letter-spacing="1.5">DIRECT CHANNELS</text>
+    <rect x="0" y="22" width="45" height="1" fill="#818cf8" opacity="0.4"/>
+
+    <!-- Channel 1: Email -->
+    <g transform="translate(0, 36)">
+      <rect width="300" height="34" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="0.8"/>
+      <!-- Email Icon -->
+      <g fill="#f87171" transform="translate(12, 9) scale(0.9)">
+        <path d="M1.75 3h12.5c.966 0 1.75.784 1.75 1.75v6.5A1.75 1.75 0 0 1 14.25 13H1.75A1.75 1.75 0 0 1 0 11.25v-6.5C0 3.784.784 3 1.75 3zm0 1.5a.25.25 0 0 0-.25.25v.38l6.5 4.333 6.5-4.333v-.38a.25.25 0 0 0-.25-.25H1.75zm13 2.07-5.834 3.889a1.75 1.75 0 0 1-1.832 0L1.5 6.57v4.68c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V6.57z"/>
+      </g>
+      <text x="36" y="21" font-family="'JetBrains Mono',monospace" font-size="11" fill="#e2e8f0">trong20843@gmail.com</text>
+      <text x="286" y="21" font-family="'JetBrains Mono',monospace" font-size="10" fill="#64748b" text-anchor="end">SMTP</text>
+    </g>
+
+    <!-- Channel 2: GitHub -->
+    <g transform="translate(0, 78)">
+      <rect width="300" height="34" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="0.8"/>
+      <!-- GitHub Icon -->
+      <g fill="#c084fc" transform="translate(12, 9) scale(0.9)">
+        <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+      </g>
+      <text x="36" y="21" font-family="'JetBrains Mono',monospace" font-size="11" fill="#e2e8f0">github.com/hoangtuvungcao</text>
+      <text x="286" y="21" font-family="'JetBrains Mono',monospace" font-size="10" fill="#64748b" text-anchor="end">SSH / HTTPS</text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Line -->
+  <rect x="180" y="${height - 8}" width="540" height="1" rx="0.5" fill="url(#faccent)" opacity="0.3"/>
+</svg>`;
+
+  writeFileSync(join(OUTPUT_DIR, 'footer.svg'), svg);
+  console.log('Generated footer.svg');
+}
+
+generateFooter();

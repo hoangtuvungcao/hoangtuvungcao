@@ -42,6 +42,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node .github/scripts/generate-snake.js
 
+      - name: Generate Footer
+        run: node .github/scripts/generate-footer.js
+
       - name: Commit and Push
         run: |
           git config --global user.name 'github-actions[bot]'
