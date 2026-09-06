@@ -1,0 +1,15 @@
+{
+  "name": "profile-metrics-generator",
+  "version": "1.0.0",
+  "description": "Generate dynamic SVG metrics for GitHub profile",
+  "type": "module",
+  "scripts": {
+    "generate:header": "node generate-header.js",
+    "generate:metrics": "node generate-metrics.js",
+    "generate:snake": "node generate-snake.js",
+    "generate:all": "node generate-header.js && node generate-metrics.js && node generate-snake.js"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}

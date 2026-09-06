@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="wave-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.3"/>
+      <stop offset="50%" style="stop-color:#a855f7;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#wave-grad)" d="M0,40 C360,100 720,0 1080,60 C1260,90 1380,30 1440,50 L1440,100 L0,100 Z">
+    <animate attributeName="d" values="M0,40 C360,100 720,0 1080,60 C1260,90 1380,30 1440,50 L1440,100 L0,100 Z;M0,60 C360,10 720,90 1080,30 C1260,10 1380,70 1440,40 L1440,100 L0,100 Z;M0,40 C360,100 720,0 1080,60 C1260,90 1380,30 1440,50 L1440,100 L0,100 Z" dur="8s" repeatCount="indefinite"/>
+  </path>
+  <path fill="url(#wave-grad)" opacity="0.3" d="M0,60 C480,10 960,90 1440,40 L1440,100 L0,100 Z">
+    <animate attributeName="d" values="M0,60 C480,10 960,90 1440,40 L1440,100 L0,100 Z;M0,30 C480,90 960,20 1440,70 L1440,100 L0,100 Z;M0,60 C480,10 960,90 1440,40 L1440,100 L0,100 Z" dur="6s" repeatCount="indefinite"/>
+  </path>
+</svg>
