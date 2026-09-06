@@ -1,11 +1,11 @@
 /**
  * generate-metrics.js
  *
- * Fetches GitHub user data via REST API and generates two SVG cards:
- * 1. metrics-stats.svg  — Stars, repos, forks, followers with animated bars
- * 2. metrics-languages.svg — Top languages with stacked bar + legend
+ * Fetches GitHub user data via REST API and generates two premium SVG cards:
+ * 1. metrics-stats.svg  — Glassmorphism stats with animated neon bars
+ * 2. metrics-languages.svg — Top languages with animated stacked bar + legend
  *
- * Professional design: no emoji, clean typography, animated fills.
+ * Ultra-premium design: glassmorphism, neon glows, animated gradients.
  */
 
 import { writeFileSync, mkdirSync } from 'fs';
@@ -39,58 +39,91 @@ async function fetchAllRepos() {
   return repos;
 }
 
-// ─── SVG Shared Defs ────────────────────────────────────────────────────────────
-
-const cardDefs = `
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d1117"/>
-      <stop offset="100%" style="stop-color:#161b22"/>
-    </linearGradient>
-    <linearGradient id="accent1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#6366f1"/>
-      <stop offset="100%" style="stop-color:#a855f7"/>
-    </linearGradient>
-    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#a855f7"/>
-      <stop offset="100%" style="stop-color:#ec4899"/>
-    </linearGradient>`;
-
 // ─── Stats Card ────────────────────────────────────────────────────────────────
 
 function generateStatsCard(stats) {
-  const w = 440, h = 220;
+  const w = 460, h = 240;
 
   const items = [
-    { label: 'Total Stars', value: stats.totalStars, color: '#fbbf24', icon: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z' },
-    { label: 'Repositories', value: stats.totalRepos, color: '#6366f1', icon: 'M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z' },
-    { label: 'Total Forks', value: stats.totalForks, color: '#a855f7', icon: 'M7 5C7 3.89 6.11 3 5 3S3 3.89 3 5c0 .74.4 1.38 1 1.72v7.56c-.6.35-1 .98-1 1.72 0 1.11.89 2 2 2s2-.89 2-2c0-.74-.4-1.38-1-1.72V8.97a5 5 0 004 0V6.72c-.6-.34-1-.98-1-1.72zm12 0c0-1.11-.89-2-2-2s-2 .89-2 2c0 .74.4 1.38 1 1.72V10l-4 4v1.28c-.6.35-1 .98-1 1.72 0 1.11.89 2 2 2s2-.89 2-2c0-.74-.4-1.38-1-1.72V14l4-4V6.72c.6-.34 1-.98 1-1.72z' },
-    { label: 'Followers', value: stats.followers, color: '#ec4899', icon: 'M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z' },
+    { label: 'Total Stars', value: stats.totalStars, color: '#fbbf24', barColor: '#f59e0b', glowColor: 'rgba(251,191,36,0.3)' },
+    { label: 'Repositories', value: stats.totalRepos, color: '#818cf8', barColor: '#6366f1', glowColor: 'rgba(99,102,241,0.3)' },
+    { label: 'Total Forks', value: stats.totalForks, color: '#c084fc', barColor: '#a855f7', glowColor: 'rgba(168,85,247,0.3)' },
+    { label: 'Followers', value: stats.followers, color: '#f472b6', barColor: '#ec4899', glowColor: 'rgba(236,72,153,0.3)' },
   ];
 
   const maxVal = Math.max(...items.map(i => i.value), 1);
 
   const rows = items.map((item, i) => {
-    const y = 65 + i * 36;
-    const barWidth = Math.max(8, (item.value / maxVal) * 180);
+    const y = 70 + i * 38;
+    const barWidth = Math.max(10, (item.value / maxVal) * 200);
     return `
-    <g transform="translate(30, ${y})">
-      <text x="0" font-family="'Inter',sans-serif" font-size="13" fill="#8b949e" dominant-baseline="central">${item.label}</text>
-      <rect x="130" y="-5" width="${barWidth}" height="10" rx="3" fill="${item.color}" opacity="0.2">
-        <animate attributeName="width" from="0" to="${barWidth}" dur="0.8s" begin="${0.15 + i * 0.12}s" fill="freeze"/>
+    <g transform="translate(28, ${y})">
+      <text x="0" font-family="'Inter',sans-serif" font-size="12.5" fill="#8b949e" dominant-baseline="central" font-weight="500">${item.label}</text>
+      <!-- Bar background -->
+      <rect x="130" y="-6" width="200" height="12" rx="6" fill="rgba(255,255,255,0.03)"/>
+      <!-- Animated fill bar -->
+      <rect x="130" y="-6" width="0" height="12" rx="6" fill="${item.barColor}" opacity="0.35">
+        <animate attributeName="width" from="0" to="${barWidth}" dur="1s" begin="${0.2 + i * 0.15}s" fill="freeze"/>
       </rect>
-      <circle cx="${130 + barWidth + 8}" cy="0" r="2.5" fill="${item.color}" opacity="0.6">
-        <animate attributeName="opacity" from="0" to="0.6" dur="0.3s" begin="${0.15 + i * 0.12 + 0.7}s" fill="freeze"/>
+      <!-- Shimmer effect on bar -->
+      <rect x="130" y="-6" width="0" height="12" rx="6" fill="url(#shimmer)" opacity="0.4">
+        <animate attributeName="width" from="0" to="${barWidth}" dur="1s" begin="${0.2 + i * 0.15}s" fill="freeze"/>
+      </rect>
+      <!-- Glow dot at end -->
+      <circle cx="${130 + barWidth}" cy="0" r="3" fill="${item.color}" opacity="0">
+        <animate attributeName="opacity" from="0" to="0.8" dur="0.3s" begin="${0.2 + i * 0.15 + 0.9}s" fill="freeze"/>
+        <animate attributeName="r" values="3;4;3" dur="2s" begin="${0.2 + i * 0.15 + 1}s" repeatCount="indefinite"/>
       </circle>
-      <text x="${w - 30}" font-family="'JetBrains Mono',monospace" font-size="14" fill="#e2e8f0" text-anchor="end" font-weight="600" dominant-baseline="central">${item.value.toLocaleString()}</text>
+      <!-- Value -->
+      <text x="${w - 28}" font-family="'JetBrains Mono',monospace" font-size="14" fill="${item.color}" text-anchor="end" font-weight="700" dominant-baseline="central" opacity="0">
+        ${item.value.toLocaleString()}
+        <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="${0.3 + i * 0.15}s" fill="freeze"/>
+      </text>
     </g>`;
   }).join('');
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
-  <defs>${cardDefs}</defs>
-  <rect width="${w}" height="${h}" rx="10" fill="url(#bg)"/>
-  <rect x="0.5" y="0.5" width="${w - 1}" height="${h - 1}" rx="10" fill="none" stroke="#30363d" stroke-width="1"/>
-  <text x="30" y="35" font-family="'Inter',sans-serif" font-size="15" font-weight="700" fill="url(#accent1)">GitHub Stats</text>
-  <rect x="30" y="45" width="80" height="1.5" rx="1" fill="url(#accent1)" opacity="0.4"/>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a"/>
+      <stop offset="50%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#0f0a20"/>
+    </linearGradient>
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0)"/>
+      <stop offset="50%" style="stop-color:rgba(255,255,255,0.15)"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0)"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.4">
+        <animate attributeName="stop-opacity" values="0.3;0.6;0.3" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#a855f7;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:0.4">
+        <animate attributeName="stop-opacity" values="0.3;0.6;0.3" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="${w}" height="${h}" rx="12" fill="url(#bg)"/>
+  <!-- Subtle radial glow -->
+  <circle cx="${w/2}" cy="${h/2}" r="120" fill="#6366f1" opacity="0.02"/>
+
+  <!-- Border -->
+  <rect x="0.5" y="0.5" width="${w - 1}" height="${h - 1}" rx="12" fill="none" stroke="url(#borderGrad)" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="28" y="38" font-family="'Inter',sans-serif" font-size="15" font-weight="700" fill="url(#title-grad)" filter="url(#glow)">GitHub Stats</text>
+  <rect x="28" y="48" width="85" height="1.5" rx="1" fill="url(#title-grad)" opacity="0.5">
+    <animate attributeName="width" values="0;85" dur="0.8s" fill="freeze"/>
+  </rect>
+
   ${rows}
 </svg>`;
 }
@@ -98,7 +131,7 @@ function generateStatsCard(stats) {
 // ─── Languages Card ─────────────────────────────────────────────────────────────
 
 function generateLanguagesCard(languages) {
-  const w = 440, h = 220;
+  const w = 460, h = 240;
 
   const total = Object.values(languages).reduce((a, b) => a + b, 0);
   const sorted = Object.entries(languages)
@@ -116,16 +149,15 @@ function generateLanguagesCard(languages) {
   };
 
   // Stacked bar
-  const barWidth = w - 60;
-  let offset = 30;
+  const barWidth = w - 56;
+  let offset = 28;
   const stackedBar = sorted.map((lang, i) => {
     const segWidth = (parseFloat(lang.pct) / 100) * barWidth;
     const color = langColors[lang.name] || '#8b949e';
     const x = offset;
     offset += segWidth;
-    const rx = i === 0 ? '4' : i === sorted.length - 1 ? '4' : '0';
-    return `<rect x="${x.toFixed(1)}" y="55" width="${segWidth.toFixed(1)}" height="8" rx="${rx}" fill="${color}">
-      <animate attributeName="width" from="0" to="${segWidth.toFixed(1)}" dur="1s" begin="${(i * 0.08).toFixed(2)}s" fill="freeze"/>
+    return `<rect x="${x.toFixed(1)}" y="58" width="0" height="10" rx="${i === 0 ? '5 0 0 5' : i === sorted.length - 1 ? '0 5 5 0' : '0'}" fill="${color}">
+      <animate attributeName="width" from="0" to="${segWidth.toFixed(1)}" dur="1.2s" begin="${(i * 0.1).toFixed(2)}s" fill="freeze"/>
     </rect>`;
   }).join('\n  ');
 
@@ -133,23 +165,58 @@ function generateLanguagesCard(languages) {
   const legendItems = sorted.map((lang, i) => {
     const col = i % 2;
     const row = Math.floor(i / 2);
-    const x = 30 + col * 200;
-    const y = 88 + row * 28;
+    const x = 28 + col * 210;
+    const y = 95 + row * 30;
     const color = langColors[lang.name] || '#8b949e';
     return `
-    <g transform="translate(${x}, ${y})">
-      <rect x="0" y="-4" width="8" height="8" rx="2" fill="${color}"/>
-      <text x="14" font-family="'Inter',sans-serif" font-size="11.5" fill="#c9d1d9" dominant-baseline="central">${lang.name}</text>
-      <text x="165" font-family="'JetBrains Mono',monospace" font-size="11" fill="#6e7681" text-anchor="end" dominant-baseline="central">${lang.pct}%</text>
+    <g transform="translate(${x}, ${y})" opacity="0">
+      <rect x="0" y="-5" width="10" height="10" rx="2.5" fill="${color}">
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" begin="${(i * 0.3).toFixed(1)}s" repeatCount="indefinite"/>
+      </rect>
+      <text x="16" font-family="'Inter',sans-serif" font-size="12" fill="#c9d1d9" dominant-baseline="central" font-weight="500">${lang.name}</text>
+      <text x="175" font-family="'JetBrains Mono',monospace" font-size="11" fill="#6e7681" text-anchor="end" dominant-baseline="central">${lang.pct}%</text>
+      <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="${(0.5 + i * 0.08).toFixed(2)}s" fill="freeze"/>
     </g>`;
   }).join('');
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
-  <defs>${cardDefs}</defs>
-  <rect width="${w}" height="${h}" rx="10" fill="url(#bg)"/>
-  <rect x="0.5" y="0.5" width="${w - 1}" height="${h - 1}" rx="10" fill="none" stroke="#30363d" stroke-width="1"/>
-  <text x="30" y="35" font-family="'Inter',sans-serif" font-size="15" font-weight="700" fill="url(#accent2)">Top Languages</text>
-  <rect x="30" y="45" width="100" height="1.5" rx="1" fill="url(#accent2)" opacity="0.4"/>
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a"/>
+      <stop offset="50%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#0f0a20"/>
+    </linearGradient>
+    <linearGradient id="title-grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a855f7"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+    <linearGradient id="borderGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:0.4">
+        <animate attributeName="stop-opacity" values="0.3;0.6;0.3" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#ec4899;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0.4">
+        <animate attributeName="stop-opacity" values="0.3;0.6;0.3" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <filter id="glow2"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="${w}" height="${h}" rx="12" fill="url(#bg2)"/>
+  <circle cx="${w/2}" cy="${h/2}" r="100" fill="#a855f7" opacity="0.015"/>
+
+  <!-- Border -->
+  <rect x="0.5" y="0.5" width="${w - 1}" height="${h - 1}" rx="12" fill="none" stroke="url(#borderGrad2)" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="28" y="38" font-family="'Inter',sans-serif" font-size="15" font-weight="700" fill="url(#title-grad2)" filter="url(#glow2)">Top Languages</text>
+  <rect x="28" y="48" width="105" height="1.5" rx="1" fill="url(#title-grad2)" opacity="0.5">
+    <animate attributeName="width" values="0;105" dur="0.8s" fill="freeze"/>
+  </rect>
+
+  <!-- Bar background -->
+  <rect x="28" y="58" width="${barWidth}" height="10" rx="5" fill="rgba(255,255,255,0.03)"/>
   ${stackedBar}
   ${legendItems}
 </svg>`;

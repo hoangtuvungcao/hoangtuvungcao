@@ -12,7 +12,7 @@
 <br/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3000&pause=1200&color=818CF8&center=true&vCenter=true&repeat=true&width=560&height=28&lines=Building+secure+and+reliable+systems;Go+%C2%B7+Rust+%C2%B7+Linux+%C2%B7+Cloud+Native;WAF+%C2%B7+eBPF+%C2%B7+Network+Security" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3000&pause=1200&color=818CF8&center=true&vCenter=true&repeat=true&width=600&height=28&lines=Building+secure+and+reliable+systems;Go+%C2%B7+Rust+%C2%B7+Linux+%C2%B7+Cloud+Native;WAF+%C2%B7+eBPF+%C2%B7+Network+Security;Self-hosted+infra+%C2%B7+Tunneling+%C2%B7+AI" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -75,17 +75,17 @@ principles:
 <div align="center">
 
 <a href="https://github.com/hoangtuvungcao">
-  <img src="./assets/metrics-stats.svg" alt="GitHub Stats" width="440"/>
+  <img src="./assets/metrics-stats.svg" alt="GitHub Stats" width="460"/>
 </a>
 &nbsp;&nbsp;
 <a href="https://github.com/hoangtuvungcao">
-  <img src="./assets/metrics-languages.svg" alt="Top Languages" width="440"/>
+  <img src="./assets/metrics-languages.svg" alt="Top Languages" width="460"/>
 </a>
 
 <br/><br/>
 
 <a href="https://github.com/hoangtuvungcao">
-  <img src="https://streak-stats.demolab.com?user=hoangtuvungcao&theme=transparent&hide_border=true&border_radius=10&date_format=j%20M%5B%20Y%5D&ring=6366f1&fire=a855f7&currStreakLabel=a855f7&sideLabels=e2e8f0&dates=6e7681&currStreakNum=e2e8f0&sideNums=e2e8f0&background=0d1117" alt="GitHub Streak" width="520"/>
+  <img src="https://streak-stats.demolab.com?user=hoangtuvungcao&theme=transparent&hide_border=true&border_radius=12&date_format=j%20M%5B%20Y%5D&ring=6366f1&fire=a855f7&currStreakLabel=a855f7&sideLabels=e2e8f0&dates=6e7681&currStreakNum=e2e8f0&sideNums=e2e8f0&background=0d1117" alt="GitHub Streak" width="540"/>
 </a>
 
 <br/><br/>
@@ -122,7 +122,7 @@ principles:
 
 <br/><br/>
 
-**Systems & Security**
+**Systems and Security**
 
 <p>
   <img src="https://img.shields.io/badge/eBPF-5A67D8?style=flat-square&logoColor=white" alt="eBPF"/>
@@ -132,6 +132,7 @@ principles:
   <img src="https://img.shields.io/badge/Traffic_Analysis-276749?style=flat-square" alt="Traffic Analysis"/>
   <img src="https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare"/>
   <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus"/>
+  <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana"/>
 </p>
 
 <br/>
@@ -276,7 +277,7 @@ Explore more tools and projects around networking, security, infrastructure auto
 
 <!-- SECURITY -->
 
-## Security & Responsible Use
+## Security and Responsible Use
 
 Security-related projects and experiments are intended for **authorized defensive research, controlled lab testing, and educational use**. Testing should only be performed on systems you own or have explicit permission to assess.
 
