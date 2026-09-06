@@ -266,9 +266,9 @@ function generateHeader() {
   <g transform="translate(${width / 2}, 232)" opacity="0">
     <text font-family="'JetBrains Mono',monospace" font-size="11" text-anchor="middle">
       <tspan fill="#22c55e">●</tspan>
-      <tspan fill="#64748b" dx="6">Secure &amp; resilient systems</tspan>
+      <tspan fill="#64748b" dx="6">Defensive Security &amp; Kernel Ops</tspan>
       <tspan fill="#30363d" dx="12">|</tspan>
-      <tspan fill="#64748b" dx="12">Go · Rust · Linux · Cloud Native</tspan>
+      <tspan fill="#64748b" dx="12">Go · Rust · eBPF/XDP · Linux</tspan>
     </text>
     <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.9s" fill="freeze"/>
   </g>
@@ -286,7 +286,7 @@ function generateHeader() {
   <!-- Bottom info -->
   <g transform="translate(${width / 2}, ${height - 12})">
     <text font-family="'JetBrains Mono',monospace" font-size="8.5" fill="#334155" text-anchor="middle" letter-spacing="2.5">
-      VIETNAM · TAY NGUYEN UNIVERSITY · OPEN SOURCE
+      TAY NGUYEN, VIETNAM · DEFENSIVE SECURITY &amp; KERNEL SYSTEMS
     </text>
   </g>
 

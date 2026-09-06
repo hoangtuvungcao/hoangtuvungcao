@@ -12,7 +12,7 @@
 <br/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3000&pause=1200&color=818CF8&center=true&vCenter=true&repeat=true&width=600&height=28&lines=Building+secure+and+reliable+systems;Go+%C2%B7+Rust+%C2%B7+Linux+%C2%B7+Cloud+Native;WAF+%C2%B7+eBPF+%C2%B7+Network+Security;Self-hosted+infra+%C2%B7+Tunneling+%C2%B7+AI" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=19&duration=2800&pause=1000&color=818CF8&center=true&vCenter=true&repeat=true&width=620&height=28&lines=Building+high-throughput+%26+resilient+systems;eBPF+%2F+XDP+Kernel-Level+Packet+Filtering;Layer+7+WAF+%26+Reverse+Proxy+Architect;Multiplexed+Zero-Trust+Tunneling+Protocols;hoangtuvungcao+%C2%B7+Tay+Nguyen%2C+Vietnam" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -22,7 +22,7 @@
     <img src="https://img.shields.io/badge/GitHub-hoangtuvungcao-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
   <a href="mailto:trong20843@gmail.com">
-    <img src="https://img.shields.io/badge/Email-trong20843-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+    <img src="https://img.shields.io/badge/Email-trong20843%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
 </p>
 
@@ -31,7 +31,7 @@
   &nbsp;
   <img src="https://img.shields.io/github/followers/hoangtuvungcao?style=flat-square&logo=github&color=a855f7&label=followers" alt="Followers"/>
   &nbsp;
-  <img src="https://img.shields.io/badge/focus-backend%20·%20infra%20·%20security-0d1117?style=flat-square&color=6366f1" alt="Focus"/>
+  <img src="https://img.shields.io/badge/clearance-defensive%20security%20·%20systems%20eng-0d1117?style=flat-square&color=6366f1" alt="Clearance"/>
 </p>
 
 </div>
@@ -43,27 +43,24 @@
 ## About
 
 ```yaml
-name:      Nguyen Van Trong
-location:  Vietnam
-education: Information Technology, Tay Nguyen University
-role:      Backend Engineer · DevOps · Security Researcher
+# SYSTEM MANIFEST: hoangtuvungcao.sys
+operator:
+  handle:    hoangtuvungcao (Nguyen Van Trong)
+  origin:    Tay Nguyen, Vietnam [12.6667° N, 108.0500° E]
+  station:   Information Technology · Tay Nguyen University
+  clearance: Defensive Security · Systems Engineering · DevOps
 
-building:
-  - Web Application Firewalls and reverse proxies in Go
-  - Self-hosted tunneling platforms (HTTP/S, TCP, UDP)
-  - AI-assisted agricultural tools (YOLO, FastAPI, Flutter)
-  - Defensive security tooling and traffic analysis
+tactical_matrix:
+  l7_defense:   High-concurrency WAF & reverse proxies in Go (Mango WAF)
+  kernel_ops:   eBPF/XDP zero-copy packet filtering at network ingress
+  tunneling:    Multi-protocol reverse tunnels (HTTP/S, TCP, UDP, WebDAV)
+  intelligence: YOLOv8 neural diagnostics daemon + FastAPI + Gemini AI
 
-exploring:
-  - eBPF/XDP kernel-level packet filtering
-  - High-concurrency networking patterns
-  - Reproducible deployment and operational hardening
-
-principles:
-  - Measure before optimizing
-  - Design for recovery
-  - Automate repeatable work
-  - Document for operators
+doctrine:
+  - "Never trust user input. Never trust default configurations."
+  - "Drop malicious packets at kernel ingress before user-space overhead."
+  - "Measure before optimizing. Design for rapid failure recovery."
+  - "Automate repeatable toil. Document for incident response."
 ```
 
 ---
@@ -243,13 +240,13 @@ Explore more tools and projects around networking, security, infrastructure auto
 
 ## Current Focus
 
-| | |
-|:---|:---|
-| **Benchmarking** | Reproducible load, latency, and resource benchmarks for Go networking components |
-| **Deployment** | Safer and more observable Linux deployment workflows |
-| **Kernel** | eBPF/XDP-based packet filtering and traffic analysis |
-| **Defense** | WAF architecture, defensive automation, and failure recovery |
-| **Hardening** | CI security checks, release integrity, and operational hardening |
+| Tactical Vector | Operational Objective |
+| :--- | :--- |
+| **Kernel Networking** | Zero-copy packet dropping with eBPF/XDP on Linux network drivers |
+| **L7 WAF Architecture** | High-concurrency reverse proxying, token-bucket rate limiters & edge security |
+| **Hardened Deployment** | Minimal attack-surface containers, immutable Linux nodes & reproducible builds |
+| **Security Benchmarking** | Reproducible latency, throughput & error telemetry under adversarial load |
+| **Automated Defense** | CI security auditing, supply-chain verification & anomaly detection |
 
 ---
 
@@ -257,19 +254,19 @@ Explore more tools and projects around networking, security, infrastructure auto
 
 ## Engineering Philosophy
 
-> *Build it. Measure it. Break it safely. Understand the failure mode. Secure it. Improve it.*
+> *Build it. Measure it. Break it safely in the lab. Understand the failure mode. Harden the core. Iterate.*
 
 <details>
-<summary>Principles</summary>
+<summary>System Principles</summary>
 <br/>
 
-| | |
-|:---|:---|
-| **Measure before optimizing** | Publish the environment, workload, latency, error rate, and resource usage |
-| **Design for recovery** | Health checks, rollback paths, safe defaults, clear troubleshooting steps |
-| **State limits honestly** | Security controls reduce risk — they don't replace secure application design |
-| **Automate repeatable work** | Builds, tests, security checks, releases, and deployment must be reproducible |
-| **Document for operators** | Installation, configuration, architecture, failure modes, and recovery |
+| Principle | Doctrine |
+| :--- | :--- |
+| **Measure before optimizing** | Publish the benchmark environment, workload profile, p99 latency, and saturation points |
+| **Design for recovery** | Automated health checks, deterministic rollback paths, safe fallback defaults |
+| **State limits honestly** | Security mitigations reduce attack surface — they do not eliminate logic flaws |
+| **Automate repeatable toil** | Builds, security linters, container packaging, and releases must be deterministic |
+| **Document for operators** | Architecture topology, failure matrices, incident response & post-mortem procedures |
 
 </details>
 
@@ -277,9 +274,9 @@ Explore more tools and projects around networking, security, infrastructure auto
 
 <!-- SECURITY -->
 
-## Security and Responsible Use
+## Security and Responsible Disclosure
 
-Security-related projects and experiments are intended for **authorized defensive research, controlled lab testing, and educational use**. Testing should only be performed on systems you own or have explicit permission to assess.
+All security research, packet inspection tools, and proof-of-concept components are authored strictly for **defensive validation, laboratory testing, and educational research under responsible disclosure**. Root access and attack simulations must only occur within isolated testbeds or authorized environments.
 
 ---
 
@@ -287,12 +284,12 @@ Security-related projects and experiments are intended for **authorized defensiv
 
 ## Opportunities
 
-| Domain | Focus Areas | Status |
+| Operational Domain | Tactical Focus | Status |
 | :--- | :--- | :--- |
-| **Backend Engineering** | Go, Rust, Distributed Systems, High-Concurrency APIs | `Open to Junior / Internship` |
-| **DevOps & Platform** | Linux Hardening, Docker, CI/CD Pipelines, Observability | `Available for projects` |
-| **Defensive Security** | WAF Architecture, eBPF/XDP Filtering, Traffic Analysis | `Active research` |
-| **Open Source** | Tunneling Platforms, Network Tooling, Security Hardening | `Open to collaboration` |
+| **Backend Engineering** | Go, Rust, Distributed Systems, High-Concurrency APIs | `ACTIVE // Open to Junior / Internship` |
+| **DevOps & Platform Security** | Linux Hardening, Container Isolation, CI/CD Pipeline Security | `DEPLOYABLE // Available for projects` |
+| **Defensive Security** | WAF Architecture, eBPF/XDP Filtering, Traffic Analysis | `ENGAGED // Active research` |
+| **Open Source Tooling** | Tunneling Platforms, Network Tooling, Security Hardening | `COLLABORATING // Open to PRs & Collab` |
 
 ---
 
@@ -321,4 +318,3 @@ Security-related projects and experiments are intended for **authorized defensiv
 <sub>Metrics auto-generated via GitHub Actions · Updated every 6 hours</sub>
 
 </div>
-
