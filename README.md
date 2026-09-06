@@ -75,11 +75,11 @@ principles:
 <div align="center">
 
 <a href="https://github.com/hoangtuvungcao">
-  <img src="./assets/metrics-stats.svg" alt="GitHub Stats" width="460"/>
+  <img src="./assets/metrics-stats.svg" alt="GitHub Stats" width="410"/>
 </a>
-&nbsp;&nbsp;
+&nbsp;
 <a href="https://github.com/hoangtuvungcao">
-  <img src="./assets/metrics-languages.svg" alt="Top Languages" width="460"/>
+  <img src="./assets/metrics-languages.svg" alt="Top Languages" width="410"/>
 </a>
 
 <br/><br/>
