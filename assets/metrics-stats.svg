@@ -85,20 +85,20 @@
       <rect x="132" y="-5" width="160" height="10" rx="5" fill="rgba(255,255,255,0.03)"/>
       <!-- Animated Fill Bar -->
       <rect x="132" y="-5" width="0" height="10" rx="5" fill="#6366f1" opacity="0.4">
-        <animate attributeName="width" from="0" to="36.68789808917197" dur="0.9s" begin="0.27s" fill="freeze"/>
+        <animate attributeName="width" from="0" to="36.17834394904459" dur="0.9s" begin="0.27s" fill="freeze"/>
       </rect>
       <!-- Shimmer overlay -->
       <rect x="132" y="-5" width="0" height="10" rx="5" fill="url(#shimmer)" opacity="0.3">
-        <animate attributeName="width" from="0" to="36.68789808917197" dur="0.9s" begin="0.27s" fill="freeze"/>
+        <animate attributeName="width" from="0" to="36.17834394904459" dur="0.9s" begin="0.27s" fill="freeze"/>
       </rect>
       <!-- Glowing head dot -->
-      <circle cx="168.68789808917197" cy="0" r="3" fill="#818cf8" opacity="0">
+      <circle cx="168.17834394904457" cy="0" r="3" fill="#818cf8" opacity="0">
         <animate attributeName="opacity" from="0" to="0.9" dur="0.3s" begin="1.07s" fill="freeze"/>
         <animate attributeName="r" values="3;4.2;3" dur="2.2s" begin="1.17s" repeatCount="indefinite"/>
       </circle>
       <!-- Value (ends exactly at content boundary) -->
       <text x="364" font-family="'JetBrains Mono',monospace" font-size="13.5" fill="#818cf8" text-anchor="end" font-weight="700" dominant-baseline="central" opacity="0">
-        72
+        71
         <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.32s" fill="freeze"/>
       </text>
     </g>
