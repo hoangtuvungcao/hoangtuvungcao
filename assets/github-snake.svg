@@ -552,6 +552,7 @@
       <animate attributeName="fill" values="#006d32;rgba(99,102,241,0.1);#006d32" dur="14s" begin="13.82s" repeatCount="indefinite"/>
     </rect>
   <rect x="864" y="80" width="13" height="13" rx="2.5" fill="#161b22"/>
+  <rect x="864" y="96" width="13" height="13" rx="2.5" fill="#161b22"/>
 
   <!-- Snake with neon glow -->
   <g filter="url(#sg)">
