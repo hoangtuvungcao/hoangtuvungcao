@@ -554,6 +554,7 @@
   <rect x="864" y="80" width="13" height="13" rx="2.5" fill="#161b22"/>
   <rect x="864" y="96" width="13" height="13" rx="2.5" fill="#161b22"/>
   <rect x="864" y="112" width="13" height="13" rx="2.5" fill="#161b22"/>
+  <rect x="864" y="128" width="13" height="13" rx="2.5" fill="#161b22"/>
 
   <!-- Snake with neon glow -->
   <g filter="url(#sg)">
