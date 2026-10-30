@@ -43,27 +43,27 @@
   <!-- Stacked Bar Track -->
   <rect x="28" y="56" width="364" height="9" rx="4.5" fill="rgba(255,255,255,0.03)"/>
   <rect x="28.0" y="56" width="0" height="9" rx="4 0 0 4" fill="#f1e05a">
-      <animate attributeName="width" from="0" to="134.7" dur="1s" begin="0.00s" fill="freeze"/>
+      <animate attributeName="width" from="0" to="134.3" dur="1s" begin="0.00s" fill="freeze"/>
     </rect>
-  <rect x="162.7" y="56" width="0" height="9" rx="0" fill="#dea584">
+  <rect x="162.3" y="56" width="0" height="9" rx="0" fill="#dea584">
       <animate attributeName="width" from="0" to="62.2" dur="1s" begin="0.08s" fill="freeze"/>
     </rect>
-  <rect x="224.9" y="56" width="0" height="9" rx="0" fill="#00ADD8">
-      <animate attributeName="width" from="0" to="36.4" dur="1s" begin="0.16s" fill="freeze"/>
+  <rect x="224.6" y="56" width="0" height="9" rx="0" fill="#00ADD8">
+      <animate attributeName="width" from="0" to="36.0" dur="1s" begin="0.16s" fill="freeze"/>
     </rect>
-  <rect x="261.3" y="56" width="0" height="9" rx="0" fill="#3572A5">
+  <rect x="260.6" y="56" width="0" height="9" rx="0" fill="#3572A5">
       <animate attributeName="width" from="0" to="23.7" dur="1s" begin="0.24s" fill="freeze"/>
     </rect>
-  <rect x="285.0" y="56" width="0" height="9" rx="0" fill="#3178c6">
+  <rect x="284.3" y="56" width="0" height="9" rx="0" fill="#3178c6">
       <animate attributeName="width" from="0" to="23.3" dur="1s" begin="0.32s" fill="freeze"/>
     </rect>
-  <rect x="308.3" y="56" width="0" height="9" rx="0" fill="#555555">
-      <animate attributeName="width" from="0" to="15.7" dur="1s" begin="0.40s" fill="freeze"/>
+  <rect x="307.6" y="56" width="0" height="9" rx="0" fill="#555555">
+      <animate attributeName="width" from="0" to="15.3" dur="1s" begin="0.40s" fill="freeze"/>
     </rect>
-  <rect x="323.9" y="56" width="0" height="9" rx="0" fill="#e34c26">
+  <rect x="322.8" y="56" width="0" height="9" rx="0" fill="#e34c26">
       <animate attributeName="width" from="0" to="15.3" dur="1s" begin="0.48s" fill="freeze"/>
     </rect>
-  <rect x="339.2" y="56" width="0" height="9" rx="0 4 4 0" fill="#00B4AB">
+  <rect x="338.1" y="56" width="0" height="9" rx="0 4 4 0" fill="#00B4AB">
       <animate attributeName="width" from="0" to="13.1" dur="1s" begin="0.56s" fill="freeze"/>
     </rect>
   
@@ -72,7 +72,7 @@
         <animate attributeName="opacity" values="0.65;1;0.65" dur="3s" begin="0.0s" repeatCount="indefinite"/>
       </rect>
       <text x="16" font-family="'Inter',-apple-system,sans-serif" font-size="11.5" fill="#cbd5e1" dominant-baseline="central" font-weight="500">JavaScript</text>
-      <text x="172" font-family="'JetBrains Mono',monospace" font-size="11" fill="#64748b" text-anchor="end" dominant-baseline="central">37.0%</text>
+      <text x="172" font-family="'JetBrains Mono',monospace" font-size="11" fill="#64748b" text-anchor="end" dominant-baseline="central">36.9%</text>
       <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.40s" fill="freeze"/>
     </g>
     <g transform="translate(220, 92)" opacity="0">
@@ -88,7 +88,7 @@
         <animate attributeName="opacity" values="0.65;1;0.65" dur="3s" begin="0.6s" repeatCount="indefinite"/>
       </rect>
       <text x="16" font-family="'Inter',-apple-system,sans-serif" font-size="11.5" fill="#cbd5e1" dominant-baseline="central" font-weight="500">Go</text>
-      <text x="172" font-family="'JetBrains Mono',monospace" font-size="11" fill="#64748b" text-anchor="end" dominant-baseline="central">10.0%</text>
+      <text x="172" font-family="'JetBrains Mono',monospace" font-size="11" fill="#64748b" text-anchor="end" dominant-baseline="central">9.9%</text>
       <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.54s" fill="freeze"/>
     </g>
     <g transform="translate(220, 121)" opacity="0">
@@ -112,7 +112,7 @@
         <animate attributeName="opacity" values="0.65;1;0.65" dur="3s" begin="1.5s" repeatCount="indefinite"/>
       </rect>
       <text x="16" font-family="'Inter',-apple-system,sans-serif" font-size="11.5" fill="#cbd5e1" dominant-baseline="central" font-weight="500">C</text>
-      <text x="172" font-family="'JetBrains Mono',monospace" font-size="11" fill="#64748b" text-anchor="end" dominant-baseline="central">4.3%</text>
+      <text x="172" font-family="'JetBrains Mono',monospace" font-size="11" fill="#64748b" text-anchor="end" dominant-baseline="central">4.2%</text>
       <animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.75s" fill="freeze"/>
     </g>
     <g transform="translate(28, 179)" opacity="0">
