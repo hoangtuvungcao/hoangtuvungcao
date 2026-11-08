@@ -564,8 +564,8 @@
   <rect x="848" y="160" width="13" height="13" rx="2.5" fill="#39d353">
       <animate attributeName="fill" values="#39d353;rgba(99,102,241,0.1);#39d353" dur="14s" begin="13.17s" repeatCount="indefinite"/>
     </rect>
-  <rect x="864" y="64" width="13" height="13" rx="2.5" fill="#006d32">
-      <animate attributeName="fill" values="#006d32;rgba(99,102,241,0.1);#006d32" dur="14s" begin="13.83s" repeatCount="indefinite"/>
+  <rect x="864" y="64" width="13" height="13" rx="2.5" fill="#39d353">
+      <animate attributeName="fill" values="#39d353;rgba(99,102,241,0.1);#39d353" dur="14s" begin="13.83s" repeatCount="indefinite"/>
     </rect>
 
   <!-- Snake with neon glow -->
